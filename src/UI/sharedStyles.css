@@ -6,3 +6,7 @@
 .blueText {
     color: #5790B4;
 }
+
+.paddingTop {
+    padding-top: calc(40px + 79px); /* margin + высота header */
+}

@@ -1,4 +1,5 @@
 .about {
+    composes: paddingTop from '/src/UI/sharedStyles.css';
     width: 392px;
     top: 0;
     left: 0;
@@ -6,7 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - (79px + 40px + 20px)); /* Это высот header + отступ header + отступ кнопки */
+    height: calc(100vh - 20px); /* Это отступ header + отступ кнопки */
 }
 
 .about__wrapper {
@@ -62,6 +63,7 @@
 
 .about__link {
     composes: blueText from '/src/UI/sharedStyles.css';
+    text-decoration: underline;
 }
 .about__btn {
 

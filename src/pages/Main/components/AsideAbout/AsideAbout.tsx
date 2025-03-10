@@ -9,9 +9,9 @@ export const AsideAbout = () => {
           <img className={styles.avatar} src="/image/avatar.png" alt={''} />
         </div>
         <div className={styles.about__content}>
-          <div className={styles.about__title}>
+          <h1 className={styles.about__title}>
             Привет! Меня зовут Настя, я UI/UX дизайнер с опытом более 1 года
-          </div>
+          </h1>
           <div className={styles.about__links}>
             <a className={styles.about__link} href="#">
               Telegram

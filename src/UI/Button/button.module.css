@@ -12,8 +12,16 @@
 .button.primary {
     background-color: #5790B4;
     color: white;
+    border: 1px solid transparent;
 }
 
 .button.primary:hover {
-    background-color: #61a3c9;
+    background-color: white;
+    color: #5790B4;
+    border: 1px solid #5790B4;
+}
+.button.primary:active {
+    background-color: #EBF0F2;
+    color: #5790B4;
+    border: 1px solid #5790B4;
 }
