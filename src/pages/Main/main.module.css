@@ -1,0 +1,6 @@
+.container {
+    composes: wrapper from '/src/UI/sharedStyles.css';
+    display: flex;
+    gap: 32px;
+    position: relative;
+}

@@ -1,0 +1,68 @@
+.about {
+    width: 392px;
+    top: 0;
+    left: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - (79px + 40px + 20px)); /* Это высот header + отступ header + отступ кнопки */
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    position: relative;
+    max-width: 280px;
+    display: block;
+    margin-bottom: 22px;
+}
+
+.wrapperAvatar {
+    position: relative;
+}
+
+.wrapperAvatar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    background-image: url("/image/elements.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.about__title {
+    font-size: 28px;
+    font-family: 'Gilroy-600';
+}
+
+.about__description {
+
+}
+
+.about__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+.about__link {
+    composes: blueText from '/src/UI/sharedStyles.css';
+}
+.about__btn {
+
+}

@@ -1,0 +1,8 @@
+.wrapper {
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+}
+
+.blueText {
+    color: #5790B4;
+}
