@@ -8,7 +8,7 @@ export const Header = () => {
       <Link to={'/'} className={styles.header__name}>
         Anastasia Pletner
       </Link>
-      <a href="#">
+      <a target="_blank" href="https://t.me/fraupletner">
         <Button>Пригласить на собеседование</Button>
       </a>
     </header>

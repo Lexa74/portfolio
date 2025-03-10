@@ -10,19 +10,35 @@ export const AsideAbout = () => {
         </div>
         <div className={styles.about__content}>
           <h1 className={styles.about__title}>
-            Привет! Меня зовут Настя, я UI/UX дизайнер с опытом более 1 года
+            Привет! Меня зовут Настя, я UI/UX дизайнер с опытом более 1 года
           </h1>
           <div className={styles.about__links}>
-            <a className={styles.about__link} href="#">
+            <a
+              target="_blank"
+              className={styles.about__link}
+              href="https://t.me/fraupletner"
+            >
               Telegram
             </a>
-            <a className={styles.about__link} href="#">
+            <a
+              target="_blank"
+              className={styles.about__link}
+              href="https://www.linkedin.com/in/anastasia-pletner-206019331/"
+            >
               linkedIn
             </a>
-            <a className={styles.about__link} href="#">
+            <a
+              target="_blank"
+              className={styles.about__link}
+              href="https://www.behance.net/pletnerdesign"
+            >
               Behance
             </a>
-            <a className={styles.about__link} href="#">
+            <a
+              target="_blank"
+              className={styles.about__link}
+              href="mailto:pletneranastasia@gmail.com"
+            >
               pletneranastasia@gmail.com
             </a>
           </div>
