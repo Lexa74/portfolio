@@ -1,0 +1,31 @@
+.movieMateImages {
+    background: #1F1F26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all;
+    position: relative;
+}
+
+.movieMateImages::after {
+    content: '';
+    position: absolute;
+    background-color: #372946;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    filter: blur(75px);
+    z-index: 1;
+    transition: .3s all;
+}
+
+.movieItem {
+    position: relative;
+    max-width: 110px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    z-index: 2;
+    transform: scale(1);
+    filter: brightness(1.0);
+    transition: .3s all;
+}

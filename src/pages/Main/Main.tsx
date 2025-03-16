@@ -1,5 +1,6 @@
 import { Header } from './components/Header/Header.tsx';
 import styles from './main.module.css';
+import './animation.css';
 import { AsideAbout } from './components/AsideAbout/AsideAbout.tsx';
 import { MainContent } from './components/MainContent/MainContent.tsx';
 

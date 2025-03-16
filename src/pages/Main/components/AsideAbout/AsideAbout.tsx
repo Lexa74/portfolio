@@ -43,13 +43,23 @@ export const AsideAbout = () => {
             </a>
           </div>
           <div className={styles.about__description}>
-            Здесь можно будет написать текст, который отражал бы меня как
-            специалиста, что-то профессионально-вайбовое, что нравится, что ищу,
-            и вообще, что я крутая!!!!!
+            <p>
+              Создаю удобные и интуитивные интерфейсы. Люблю сложные задачи,
+              продуманные решения и командную работу.
+            </p>
+            <p>
+              Ищу открытую и вдохновляющую команду, где смогу развиваться сама
+              и вносить вклад в общую цель.
+            </p>
           </div>
         </div>
       </div>
-      <Button className={styles.about__btn}>Скачать CV</Button>
+      <a
+        target={'_blank'}
+        href="https://drive.google.com/file/d/1QXX8H5yBIHoZ8iwHe4AyvIyVpcS14Yyb/view"
+      >
+        <Button className={styles.about__btn}>Посмотреть CV</Button>
+      </a>
     </aside>
   );
 };
