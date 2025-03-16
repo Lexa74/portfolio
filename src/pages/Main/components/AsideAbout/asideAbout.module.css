@@ -1,6 +1,6 @@
 .about {
     composes: paddingTop from '/src/UI/sharedStyles.css';
-    width: 392px;
+    max-width: 392px;
     top: 0;
     left: 0;
     position: sticky;
