@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 28px 0;
+}
+
+.phones {
+    max-width: 250px;
+}

@@ -1,5 +1,7 @@
 import { ICardPortfolio } from './sharedTypes/sharedTypes.ts';
 import { MovieMate } from './pages/Main/components/ViewImages/MovieMate/MovieMate.tsx';
+import { Dashboard } from './pages/Main/components/ViewImages/Dashboard/Dashboard.tsx';
+import { Hackwish } from './pages/Main/components/ViewImages/Hackwish/Hackwish.tsx';
 
 export const data: ICardPortfolio[] = [
   {
@@ -15,7 +17,8 @@ export const data: ICardPortfolio[] = [
     src: '/image/portfolio/po2.png',
     name: 'HackWish',
     description: 'Мини-приложение для генерации поздравлений с помощью ИИ',
-    component: null,
+    component: Hackwish(),
+    idSelector: 'hackwish',
   },
   {
     id: 3,
@@ -31,6 +34,7 @@ export const data: ICardPortfolio[] = [
     src: '/image/portfolio/po4.png',
     name: 'Дашборд CampaignCore',
     description: 'Гибкий и функциональный интерфейс для аналитики',
-    component: null,
+    component: Dashboard(),
+    idSelector: 'dashboard',
   },
 ];

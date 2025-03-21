@@ -1,6 +1,5 @@
 import styles from './mainContent.module.css';
 import { data } from '../../../../data.ts';
-import { MovieMate } from '../ViewImages/MovieMate/MovieMate.tsx';
 import classNames from 'classnames';
 
 export const MainContent = () => {
@@ -15,9 +14,7 @@ export const MainContent = () => {
             id={card.idSelector && card.idSelector}
           >
             {card.component ? (
-              <div className={styles.card__image}>
-                <MovieMate />
-              </div>
+              <div className={styles.card__image}>{card.component}</div>
             ) : (
               <img
                 className={styles.card__image}

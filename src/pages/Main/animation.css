@@ -9,3 +9,39 @@
     transform: scale(1.1);
     filter: brightness(1.1);
 }
+
+/* Dashboard */
+#dashboard:hover #dashboard-image1 {
+    top: -30px;
+    right: -30px;
+}
+
+#dashboard:hover #dashboard-image2 {
+    bottom: -30px;
+    left: -30px;
+}
+
+/* Hackwish */
+#hackwish:hover .green-hackwish {
+    fill: #B3EF27;
+}
+
+#hackwish:hover .image-hackwish {
+    opacity: 1;
+}
+
+#hackwish:hover .yellow-hackwish {
+    fill: #FFFB00;
+}
+
+#hackwish:hover .red-hackwish {
+    fill: #FF3135;
+}
+
+#hackwish:hover .cherry-hackwish {
+    fill: #6F1213;
+}
+
+#hackwish:hover .white-hackwish {
+    fill: #FFFFFF;
+}
