@@ -18,7 +18,6 @@ export const Project = ({ card }: ProjectProps) => {
       onMouseOut={onMouseOut}
       href="#"
       className={styles.card}
-      id={card.idSelector && card.idSelector}
     >
       {card.component ? (
         <div className={styles.card__image}>
