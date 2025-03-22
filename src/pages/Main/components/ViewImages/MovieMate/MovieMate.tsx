@@ -1,11 +1,18 @@
 import styles from './movieMate.module.css';
+import { IViewImagesProp } from '../types.ts';
+import classNames from 'classnames';
 
-export const MovieMate = () => {
+export const MovieMate = ({ isHover }: IViewImagesProp) => {
   return (
-    <div className={styles.movieMateImages} id={'movie-mate-images'}>
+    <div
+      className={classNames(styles.movieMateImages, {
+        [styles.isHover]: isHover,
+      })}
+    >
       <img
-        id={'movie-item'}
-        className={styles.movieItem}
+        className={classNames(styles.movieItem, {
+          [styles.isHover]: isHover,
+        })}
         src="/image/portfolio/MovieMate/screen.png"
         alt=""
       />

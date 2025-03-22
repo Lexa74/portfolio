@@ -1,10 +1,7 @@
-import { JSX } from 'react';
-
-export interface ICardPortfolio {
+export interface IProject {
   id: number;
   src: string;
   name: string;
   description: string | null;
-  component: JSX.Element | null;
-  idSelector?: string;
+  component: React.ComponentType<{ isHover: boolean }> | null;
 }

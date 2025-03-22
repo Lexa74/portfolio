@@ -1,7 +1,8 @@
 import styles from './hackwish.module.css';
 import { BackgroundHackwish } from './BackgroundHackwish.tsx';
+import { IViewImagesProp } from '../types.ts';
 
-export const Hackwish = () => {
+export const Hackwish = ({ isHover }: IViewImagesProp) => {
   return (
     <div className={styles.wrapper}>
       <img
@@ -9,7 +10,7 @@ export const Hackwish = () => {
         src="/image/portfolio/Hackwish/hackwish-phone.png"
         alt=""
       />
-      <BackgroundHackwish />
+      <BackgroundHackwish isHover={isHover} />
     </div>
   );
 };

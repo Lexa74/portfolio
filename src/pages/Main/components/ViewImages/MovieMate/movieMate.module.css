@@ -29,3 +29,15 @@
     filter: brightness(1.0);
     transition: .3s all;
 }
+
+.movieMateImages.isHover::after {
+    background-color: #4E3964;
+    width: 265px;
+    height: 265px;
+    filter: blur(83px);
+}
+
+.movieItem.isHover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}

@@ -1,9 +1,9 @@
-import { ICardPortfolio } from './sharedTypes/sharedTypes.ts';
+import { IProject } from './sharedTypes/sharedTypes.ts';
 import { MovieMate } from './pages/Main/components/ViewImages/MovieMate/MovieMate.tsx';
 import { Dashboard } from './pages/Main/components/ViewImages/Dashboard/Dashboard.tsx';
 import { Hackwish } from './pages/Main/components/ViewImages/Hackwish/Hackwish.tsx';
 
-export const data: ICardPortfolio[] = [
+export const data: IProject[] = [
   {
     id: 1,
     src: '/image/portfolio/po1.png',
@@ -17,8 +17,7 @@ export const data: ICardPortfolio[] = [
     src: '/image/portfolio/po2.png',
     name: 'HackWish',
     description: 'Мини-приложение для генерации поздравлений с помощью ИИ',
-    component: Hackwish(),
-    idSelector: 'hackwish',
+    component: Hackwish,
   },
   {
     id: 3,
@@ -26,15 +25,13 @@ export const data: ICardPortfolio[] = [
     name: 'Movie Mate',
     description:
       'Концепт приложения, разработанный на основе исследований пользователей',
-    component: MovieMate(),
-    idSelector: 'movie-mate',
+    component: MovieMate,
   },
   {
     id: 4,
     src: '/image/portfolio/po4.png',
     name: 'Дашборд CampaignCore',
     description: 'Гибкий и функциональный интерфейс для аналитики',
-    component: Dashboard(),
-    idSelector: 'dashboard',
+    component: Dashboard,
   },
 ];

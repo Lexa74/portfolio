@@ -1,0 +1,25 @@
+
+.card__image {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.card__title {
+    font-family: Gilroy-600;
+    font-size: 24px;
+    margin-bottom: 4px;
+    color: #1A3445;
+}
+
+.card__description {
+    font-size: 16px;
+    color: #7D8C93;
+}
+
+.card {
+    display: block;
+}

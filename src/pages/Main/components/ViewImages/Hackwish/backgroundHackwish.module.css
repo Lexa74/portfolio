@@ -1,0 +1,60 @@
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+g, path, circle {
+    transition: .3s all;
+}
+
+.imageHackwish {
+    opacity: 0.6;
+}
+
+.greenHackwish {
+    fill: #C691FF;
+}
+
+.yellowHackwish {
+    fill: #C691FF;
+}
+
+.redHackwish {
+    fill: #4A1980;
+}
+
+.cherryHackwish {
+    fill: #6F32B1;
+}
+
+.whiteHackwish {
+    fill: #7F3AC9;
+}
+
+.imageHackwish.isHover .greenHackwish {
+    fill: #B3EF27;
+}
+
+.imageHackwish.isHover.imageHackwish {
+    opacity: 1;
+}
+
+.imageHackwish.isHover .yellowHackwish {
+    fill: #FFFB00;
+}
+
+.imageHackwish.isHover .redHackwish {
+    fill: #FF3135;
+}
+
+.imageHackwish.isHover .cherryHackwish {
+    fill: #6F1213;
+}
+
+.imageHackwish.isHover .whiteHackwish {
+    fill: #FFFFFF;
+}
