@@ -1,4 +1,5 @@
 .content {
     composes: wrapper-inner-page from '../../UI/sharedStyles.css';
     composes: paddingTop from '/src/UI/sharedStyles.css';
+    line-height: 130%;
 }
