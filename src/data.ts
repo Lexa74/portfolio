@@ -1,7 +1,9 @@
 import { IProject } from './sharedTypes/sharedTypes.ts';
-import { MovieMate } from './pages/Main/components/ViewImages/MovieMate/MovieMate.tsx';
-import { Dashboard } from './pages/Main/components/ViewImages/Dashboard/Dashboard.tsx';
-import { Hackwish } from './pages/Main/components/ViewImages/Hackwish/Hackwish.tsx';
+import { MovieMate } from './pages/Main/components/ViewImageProject/MovieMate/MovieMate.tsx';
+import { Dashboard } from './pages/Main/components/ViewImageProject/Dashboard/Dashboard.tsx';
+import { Hackwish } from './pages/Main/components/ViewImageProject/Hackwish/Hackwish.tsx';
+import { AptekiPage } from './pages/ProjectPage/Apteki/AptekiPage.tsx';
+import { DashboardPage } from './pages/ProjectPage/Dashboard/DashboardPage.tsx';
 
 export const data: IProject[] = [
   {
@@ -11,6 +13,8 @@ export const data: IProject[] = [
     description:
       'Концепт приложения, разработанный на основе исследований пользователей',
     component: null,
+    pageId: 'apteki',
+    pageComponent: AptekiPage,
   },
   {
     id: 2,
@@ -18,6 +22,8 @@ export const data: IProject[] = [
     name: 'HackWish',
     description: 'Мини-приложение для генерации поздравлений с помощью ИИ',
     component: Hackwish,
+    pageId: 'hackwish',
+    pageComponent: AptekiPage,
   },
   {
     id: 3,
@@ -26,6 +32,8 @@ export const data: IProject[] = [
     description:
       'Концепт приложения, разработанный на основе исследований пользователей',
     component: MovieMate,
+    pageId: 'movie-mate',
+    pageComponent: AptekiPage,
   },
   {
     id: 4,
@@ -33,5 +41,7 @@ export const data: IProject[] = [
     name: 'Дашборд CampaignCore',
     description: 'Гибкий и функциональный интерфейс для аналитики',
     component: Dashboard,
+    pageId: 'dashboard',
+    pageComponent: DashboardPage,
   },
 ];

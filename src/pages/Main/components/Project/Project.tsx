@@ -1,6 +1,7 @@
 import styles from './project.module.css';
 import { IProject } from '../../../../sharedTypes/sharedTypes.ts';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 type ProjectProps = { card: IProject };
 
@@ -13,10 +14,10 @@ export const Project = ({ card }: ProjectProps) => {
     setIsHover(false);
   };
   return (
-    <a
+    <Link
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
-      href="#"
+      to={`/project/${card.pageId}`}
       className={styles.card}
     >
       {card.component ? (
@@ -29,6 +30,6 @@ export const Project = ({ card }: ProjectProps) => {
 
       <h3 className={styles.card__title}>{card.name}</h3>
       <p className={styles.card__description}>{card.description}</p>
-    </a>
+    </Link>
   );
 };

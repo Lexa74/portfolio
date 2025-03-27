@@ -1,0 +1,132 @@
+h1, .subTitle {
+    font-family: Gilroy-600;
+    font-size: 24px;
+}
+
+.subTitle {
+    color: #7D8C93;
+}
+
+h3 {
+    margin-bottom: 8px;
+    font-family: Gilroy-600;
+    font-size: 20px;
+}
+
+h2, h4, h5, .title {
+    margin-bottom: 12px;
+    font-family: Gilroy-600;
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 4px;
+}
+
+ul, ol {
+    padding-left: 25px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 4px;
+    position: relative;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.blueBlock {
+    color: #C5E6FA;
+    background-color: #5790B4;
+    border-radius: 32px;
+    padding: 32px;
+    margin-bottom: 20px;
+}
+
+.blueBlockTitle {
+    color: white;
+    font-family: Gilroy-600;
+}
+
+.blueBlockWhiteText {
+    color: white;
+}
+
+.blueBlockSubtitle {
+    font-family: Gilroy-400;
+    color: white;
+    font-size: 16px;
+}
+
+.divider {
+    background-color: #E2EAED;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.twoColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две равные колонки */
+    gap: 32px;
+}
+
+.column {
+    flex: 1;
+}
+
+.block {
+    margin-bottom: 20px;
+}
+
+.imagePersona {
+    max-width: 100px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.gap0 {
+    gap: 0;
+}
+
+.u {
+    font-style: italic;
+}
+
+.customUl {
+    list-style-type: none;
+    padding-left: 30px;
+    border-left: 1px solid #C5E6FA;
+    margin-bottom: 12px;
+}
+
+.customUl:last-child {
+    margin-bottom: 0;
+}
+
+.customUl li:before {
+    content: '–';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}

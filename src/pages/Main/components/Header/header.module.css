@@ -17,3 +17,7 @@
     text-decoration: none;
     color: #1A3445;
 }
+
+.wrapperInnerPage {
+    composes: wrapper-inner-page from '/src/UI/sharedStyles.css';
+}
