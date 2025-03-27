@@ -170,3 +170,7 @@ img {
 .db {
     display: block;
 }
+
+.radius12 {
+    border-radius: 12px;
+}

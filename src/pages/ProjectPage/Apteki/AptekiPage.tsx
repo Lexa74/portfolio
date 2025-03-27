@@ -426,7 +426,7 @@ export const AptekiPage = () => {
             </p>
             <p>
               <span className={styles.blueBlockWhiteText}>
-                Основные боли пользователей:
+                Основные боли пользователей:{' '}
               </span>
               Длинные очереди и долгое обслуживание
             </p>
@@ -442,7 +442,11 @@ export const AptekiPage = () => {
             </p>
           </div>
           <div className={classNames(styles.flexEnd, styles.twoColumns)}>
-            <img src="/image/project/kotik.png" alt="" />
+            <img
+              className={styles.radius12}
+              src="/image/project/kotik.gif"
+              alt=""
+            />
             <h5 className={classNames(styles.blueBlockWhiteText, styles.mb0)}>
               Спасибо за прочтение!
             </h5>

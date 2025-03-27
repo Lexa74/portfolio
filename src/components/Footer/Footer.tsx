@@ -6,7 +6,7 @@ export const Footer = () => {
     <div className={styles.footer}>
       <Link to={'/'} className={styles.goHome}>
         <img className={styles.footer__arr} src="/image/arr-back.svg" alt="" />
-        <p>Вернуться на главную</p>
+        <span>Вернуться на главную</span>
       </Link>
       <div className={styles.footer__linkBox}>
         <a
