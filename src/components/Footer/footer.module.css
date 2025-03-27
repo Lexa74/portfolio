@@ -1,0 +1,31 @@
+.goHome {
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    color: #1A3445;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    composes: wrapper-inner-page from '../../UI/sharedStyles.css';
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer__linkBox {
+    display: flex;
+    gap: 8px;
+}
+
+.footer__link {
+    composes: blueText from '/src/UI/sharedStyles.css';
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.footer__arr {
+    width: inherit;
+}

@@ -17,7 +17,7 @@ export const Project = ({ card }: ProjectProps) => {
     <Link
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
-      to={'#'}
+      to={`/project/${card.pageId}`}
       className={styles.card}
     >
       {card.component ? (

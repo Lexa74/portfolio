@@ -1,4 +1,12 @@
-h1, .subTitle {
+body {
+    line-height: 130%;
+}
+
+h1 {
+    margin-bottom: 12px;
+}
+
+h1, .subTitle, .h1 {
     font-family: Gilroy-600;
     font-size: 24px;
 }
@@ -17,6 +25,10 @@ h2, h4, h5, .title {
     margin-bottom: 12px;
     font-family: Gilroy-600;
     font-size: 20px;
+}
+
+.title24 {
+    font-size: 24px;
 }
 
 p {
@@ -87,6 +99,10 @@ li:last-child {
     margin-bottom: 12px;
 }
 
+.mb0 {
+    margin-bottom: 0;
+}
+
 .mb12 {
     margin-bottom: 12px;
 }
@@ -95,13 +111,22 @@ li:last-child {
     margin-bottom: 20px;
 }
 
+.mb91 {
+    margin-bottom: 91px;
+}
+
 .flex {
     display: flex;
     gap: 20px;
 }
 
+.flexEnd {
+    align-items: flex-end;
+}
+
 img {
     width: 100%;
+    display: block;
 }
 
 .gap0 {
@@ -129,4 +154,19 @@ img {
     left: -15px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.columnsSpaceBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.db {
+    display: block;
 }

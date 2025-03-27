@@ -1,5 +1,6 @@
 import styles from '../page.module.css';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 export const AptekiPage = () => {
   return (
@@ -99,8 +100,18 @@ export const AptekiPage = () => {
           </div>
         </div>
       </div>
-      <img className={styles.mb20} src="/image/project/table1.png" alt="" />
-      <img className={styles.mb20} src="/image/project/table2.png" alt="" />
+      <img
+        className={styles.mb20}
+        src="/image/project/table1.png"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        className={styles.mb20}
+        src="/image/project/table2.png"
+        alt=""
+        loading="lazy"
+      />
       <div className={classNames(styles.blueBlock)}>
         <h3 className={styles.blueBlockTitle}>Гипотезы</h3>
         <p>
@@ -119,8 +130,8 @@ export const AptekiPage = () => {
       <div className={styles.blueBlock}>
         <h4 className={styles.blueBlockTitle}>Аптека «Искамед», г. Минск</h4>
         <div className={classNames(styles.twoColumns, styles.gap0)}>
-          <img src="/image/project/ap1.png" alt="" />
-          <img src="/image/project/ap2.png" alt="" />
+          <img src="/image/project/ap1.png" alt="" loading="lazy" />
+          <img src="/image/project/ap2.png" alt="" loading="lazy" />
         </div>
       </div>
       <div className={styles.blueBlock}>
@@ -160,6 +171,289 @@ export const AptekiPage = () => {
           </li>
           <li>Конечно, да</li>
         </ul>
+      </div>
+      <div className={styles.blueBlock}>
+        <h4 className={styles.blueBlockTitle}>
+          Список вопросов для респондентов:
+        </h4>
+        <p className={styles.blueBlockWhiteText}>
+          Гипотеза 1: Витамины в аптеках
+        </p>
+        <ol className={styles.mb12}>
+          <li>Где вы обычно покупаете витамины?</li>
+          <li>Почему вы выбираете аптеки/интернет-магазины?</li>
+          <li>
+            Доверяете ли вы качеству витаминов из аптеки больше, чем из
+            интернета?
+          </li>
+          <li>
+            Были ли случаи, когда вы покупали витамины в
+            аптеке/интернет-магазине?
+          </li>
+          <li>
+            Что для вас важнее при покупке витаминов: цена, качество или
+            удобство?
+          </li>
+        </ol>
+        <p className={styles.blueBlockWhiteText}>
+          Гипотеза 2: Замена на дешевый аналог
+        </p>
+        <ol className={styles.mb12}>
+          <li>Готовы ли вы заменить дорогое лекарство на аналог?</li>
+          <li>Что важнее: цена или оригинальность препарата?</li>
+          <li>Были ли случаи, когда вы отказались от аналога?</li>
+          <li>Как вы относитесь к дженерикам?</li>
+          <li>Что может повлиять на ваше решение купить аналог?</li>
+        </ol>
+        <p className={styles.blueBlockWhiteText}>
+          Гипотеза 3: Аналоги и смена аптеки
+        </p>
+        <ol className={styles.mb12}>
+          <li>Если в аптеке нет нужного препарата, что вы делаете?</li>
+          <li>Как часто вы сталкиваетесь с отсутствием препаратов?</li>
+          <li>Что важнее: купить сразу аналог или найти нужный препарат?</li>
+          <li>Были ли случаи, когда вы уходили в другую аптеку?</li>
+          <li>
+            Как вы относитесь к замене препарата по рекомендации фармацевта?
+          </li>
+        </ol>
+        <p className={styles.blueBlockWhiteText}>
+          Гипотеза 4: Приложение для заказов
+        </p>
+        <ol>
+          <li>Пользовались ли вы приложениями для заказа лекарств?</li>
+          <li>Что важнее: забрать в аптеке или доставка?</li>
+          <li>Какие функции приложения были бы полезны?</li>
+          <li>Что может помешать использовать приложение?</li>
+          <li>Как часто вы заказываете лекарства онлайн?</li>
+        </ol>
+      </div>
+      <img className={styles.block} src="/image/project/Table%201.png" alt="" />
+      <img
+        className={styles.block}
+        src="/image/project/Table-1%201.png"
+        alt=""
+      />
+      <img
+        className={styles.block}
+        src="/image/project/Table-2%201.png"
+        alt=""
+      />
+      <img
+        className={styles.block}
+        src="/image/project/Table-3%201.png"
+        alt=""
+      />
+      <img
+        className={styles.block}
+        src="/image/project/Table-4%201.png"
+        alt=""
+      />
+      <div className={styles.blueBlock}>
+        <h4 className={styles.blueBlockWhiteText}>
+          Выводы по гипотезам, исходя из результатов интервью
+        </h4>
+        <div className={styles.mb12}>
+          <p className={styles.blueBlockWhiteText}>
+            Гипотеза 1: Люди более охотно покупают витамины в аптеках, так как
+            больше им доверяют
+          </p>
+          <p>
+            <span className={styles.blueBlockWhiteText}>Подтверждение: </span>
+            Частично.
+          </p>
+          <p>Вика полностью доверяет аптекам и покупает витамины только там.</p>
+          <p>
+            Игорь и Дмитрий менее лояльны к аптекам: Игорь выбирает между
+            аптеками и интернетом, а Дмитрий покупает витамины исключительно
+            онлайн.
+          </p>
+          <p>
+            <span className={styles.blueBlockWhiteText}>Инсайт: </span> Доверие
+            к аптекам зависит от возраста, привычек и предпочтений. Молодежь
+            и продвинутые пользователи (как Дмитрий) чаще выбирают
+            онлайн-покупки из-за удобства и цены, тогда как более консервативные
+            покупатели (как Вика) предпочитают аптеки из-за доверия к качеству.
+          </p>
+        </div>
+        <div className={styles.mb12}>
+          <p className={styles.blueBlockWhiteText}>
+            Гипотеза 2: Не каждый покупатель готов заменить лекарство на более
+            дешевый аналог
+          </p>
+          <p>
+            <span className={styles.blueBlockWhiteText}>Подтверждение: </span>
+            Подтверждается.
+          </p>
+          <p>
+            Вика категорически не готова заменять оригинальные препараты
+            на аналоги, строго следуя рекомендациям врача.
+          </p>
+          <p>
+            Игорь готов заменить препарат на аналог, но только если
+            он проверенный и имеет хорошие отзывы.
+          </p>
+          <p>
+            Дмитрий также готов к замене, если аналог доказал свою
+            эффективность.
+          </p>
+          <p>
+            <span className={styles.blueBlockWhiteText}>Инсайт: </span>
+            Готовность к замене зависит от уровня доверия к дженерикам
+            и рекомендациям врачей. Чем выше доверие к врачу, тем меньше
+            вероятность замены.
+          </p>
+        </div>
+        <div className={styles.mb12}>
+          <p className={styles.blueBlockWhiteText}>
+            Гипотеза 3: Люди менее охотно покупают аналоги или уходят в другую
+            аптеку
+          </p>
+          <p>
+            <span className={styles.blueBlockWhiteText}>Подтверждение: </span>
+            Подтверждается.
+          </p>
+          <p>
+            Вика предпочитает искать нужный препарат в других аптеках,
+            а не покупать аналог.
+          </p>
+          <p>
+            Игорь чаще покупает аналог, если он проверенный, но иногда ищет
+            в других аптеках.
+          </p>
+          <p>
+            Дмитрий вообще не ходит в аптеки, поэтому для него этот вопрос
+            не актуален.
+          </p>
+          <p>
+            <span className={styles.blueBlockWhiteText}>Инсайт: </span>
+            Покупатели делятся на две группы: те, кто доверяет аналогам (если
+            они проверены), и те, кто предпочитает искать оригинальный препарат.
+          </p>
+        </div>
+        <div className={styles.mb20}>
+          <p className={styles.blueBlockWhiteText}>
+            Гипотеза 4: Большинство людей пользовались бы приложением для
+            онлайн-заказов в аптеке
+          </p>
+          <p>
+            <span className={styles.blueBlockWhiteText}>Подтверждение: </span>
+            Подтверждается.
+          </p>
+          <p>
+            Вика не пользовалась приложениями, но готова попробовать, если это
+            будет удобно.
+          </p>
+          <p>Игорь уже пользуется приложениями и считает их полезными.</p>
+          <p>
+            Дмитрий активно использует онлайн-сервисы для заказа лекарств
+            и витаминов.
+          </p>
+          <p>
+            <span className={styles.blueBlockWhiteText}>Инсайт: </span>
+            Потенциал для внедрения приложений высок, особенно среди молодежи
+            и занятых людей. Однако важно сделать интерфейс простым и удобным,
+            чтобы привлечь менее продвинутых пользователей, таких как Вика.
+          </p>
+        </div>
+        <h4 className={styles.blueBlockWhiteText}>Общие выводы</h4>
+
+        <ol>
+          <li>
+            Доверие к аптекам сильнее у старшего поколения и консервативных
+            покупателей, тогда как молодежь и продвинутые пользователи чаще
+            выбирают онлайн-покупки.
+          </li>
+          <li>
+            Готовность к замене на аналоги зависит от уровня доверия
+            к дженерикам и рекомендациям врачей. Чем выше доверие к врачу, тем
+            меньше вероятность замены.
+          </li>
+          <li>
+            Онлайн-сервисы имеют высокий потенциал, особенно среди молодежи
+            и занятых людей, но важно учитывать потребности менее продвинутых
+            пользователей.
+          </li>
+        </ol>
+      </div>
+      <div className={styles.block}>
+        <h4 className={styles.title24}>Количественные исследования</h4>
+        <Link
+          className={classNames(
+            styles.subTitle,
+            styles.title24,
+            styles.db,
+            styles.mb20,
+          )}
+          target={'_blank'}
+          to={
+            'https://docs.google.com/forms/d/e/1FAIpQLScqC54cYIQJOhxPTiEnqLBncftl36aFaR1ornKBp9ETZSVX4w/viewform'
+          }
+        >
+          Ссылка на опрос
+        </Link>
+        <div className={styles.twoColumns}>
+          <div className={styles.columnsSpaceBetween}>
+            <img src="/image/project/diag1.png" alt="" />
+            <img src="/image/project/diag2.png" alt="" />
+            <img src="/image/project/diag3.png" alt="" />
+            <img src="/image/project/diag4.png" alt="" />
+          </div>
+          <div className={styles.columnsSpaceBetween}>
+            <img src="/image/project/diag2-1.png" alt="" />
+            <img src="/image/project/diag2-2.png" alt="" />
+            <img src="/image/project/diag2-3.png" alt="" />
+            <img src="/image/project/diag2-4.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div className={styles.twoColumns}>
+        <div
+          className={classNames(
+            styles.blueBlock,
+            styles.mb0,
+            styles.columnsSpaceBetween,
+          )}
+        >
+          <div>
+            <h4 className={styles.blueBlockWhiteText}>
+              Выводы по количественным исследованиям
+            </h4>
+
+            <p>
+              Три из четырех гипотез подтвердились. Оказалось, что люди чаще
+              покупают витамины в интернете, чем в аптеках.
+            </p>
+            <p>
+              <span className={styles.blueBlockWhiteText}>
+                Основные боли пользователей:
+              </span>
+              Длинные очереди и долгое обслуживание
+            </p>
+            <p>
+              <span className={styles.blueBlockWhiteText}>Решение: </span>
+              Разработка приложения, с помощью которого можно найти аптеку
+              с нужными препаратами, наиболее подходящими для пользователя
+              ценами и удобным местоположением. Заказ будет передаваться
+              фармацевту в выбранную аптеку и собираться заранее. Получить его
+              можно будет по уникальному коду. Для этого предусмотрено отдельное
+              окно для онлайн-заказов, где очереди практически не будет
+              благодаря сокращению времени обслуживания.
+            </p>
+          </div>
+          <div className={classNames(styles.flexEnd, styles.twoColumns)}>
+            <img src="/image/project/kotik.png" alt="" />
+            <h5 className={classNames(styles.blueBlockWhiteText, styles.mb0)}>
+              Спасибо за прочтение!
+            </h5>
+          </div>
+        </div>
+        <div>
+          <h4 className={classNames(styles.h1, styles.textCenter)}>
+            Концепт главного экрана приложения
+          </h4>
+          <img src="/image/project/image-phone.png" alt="" />
+        </div>
       </div>
     </>
   );
