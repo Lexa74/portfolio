@@ -33,7 +33,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url("/image/elements.svg");
+    background-image: url("/image/bg-avatar.svg");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;

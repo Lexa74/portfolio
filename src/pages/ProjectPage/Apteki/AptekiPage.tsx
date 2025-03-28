@@ -39,6 +39,7 @@ export const AptekiPage = () => {
         <div className={classNames(styles.blueBlock, styles.column)}>
           <div className={styles.flex}>
             <img
+              loading="lazy"
               className={styles.imagePersona}
               src="/image/project/photo.png"
               alt=""
@@ -101,16 +102,16 @@ export const AptekiPage = () => {
         </div>
       </div>
       <img
+        loading="lazy"
         className={styles.mb20}
         src="/image/project/table1.png"
         alt=""
-        loading="lazy"
       />
       <img
+        loading="lazy"
         className={styles.mb20}
         src="/image/project/table2.png"
         alt=""
-        loading="lazy"
       />
       <div className={classNames(styles.blueBlock)}>
         <h3 className={styles.blueBlockTitle}>Гипотезы</h3>
@@ -130,8 +131,8 @@ export const AptekiPage = () => {
       <div className={styles.blueBlock}>
         <h4 className={styles.blueBlockTitle}>Аптека «Искамед», г. Минск</h4>
         <div className={classNames(styles.twoColumns, styles.gap0)}>
-          <img src="/image/project/ap1.png" alt="" loading="lazy" />
-          <img src="/image/project/ap2.png" alt="" loading="lazy" />
+          <img loading="lazy" src="/image/project/ap1.png" alt="" />
+          <img loading="lazy" src="/image/project/ap2.png" alt="" />
         </div>
       </div>
       <div className={styles.blueBlock}>
@@ -228,23 +229,32 @@ export const AptekiPage = () => {
           <li>Как часто вы заказываете лекарства онлайн?</li>
         </ol>
       </div>
-      <img className={styles.block} src="/image/project/Table%201.png" alt="" />
       <img
+        loading="lazy"
+        className={styles.block}
+        src="/image/project/Table%201.png"
+        alt=""
+      />
+      <img
+        loading="lazy"
         className={styles.block}
         src="/image/project/Table-1%201.png"
         alt=""
       />
       <img
+        loading="lazy"
         className={styles.block}
         src="/image/project/Table-2%201.png"
         alt=""
       />
       <img
+        loading="lazy"
         className={styles.block}
         src="/image/project/Table-3%201.png"
         alt=""
       />
       <img
+        loading="lazy"
         className={styles.block}
         src="/image/project/Table-4%201.png"
         alt=""
@@ -396,16 +406,16 @@ export const AptekiPage = () => {
         </Link>
         <div className={styles.twoColumns}>
           <div className={styles.columnsSpaceBetween}>
-            <img src="/image/project/diag1.png" alt="" />
-            <img src="/image/project/diag2.png" alt="" />
-            <img src="/image/project/diag3.png" alt="" />
-            <img src="/image/project/diag4.png" alt="" />
+            <img loading="lazy" src="/image/project/diag1.png" alt="" />
+            <img loading="lazy" src="/image/project/diag2.png" alt="" />
+            <img loading="lazy" src="/image/project/diag3.png" alt="" />
+            <img loading="lazy" src="/image/project/diag4.png" alt="" />
           </div>
           <div className={styles.columnsSpaceBetween}>
-            <img src="/image/project/diag2-1.png" alt="" />
-            <img src="/image/project/diag2-2.png" alt="" />
-            <img src="/image/project/diag2-3.png" alt="" />
-            <img src="/image/project/diag2-4.png" alt="" />
+            <img loading="lazy" src="/image/project/diag2-1.png" alt="" />
+            <img loading="lazy" src="/image/project/diag2-2.png" alt="" />
+            <img loading="lazy" src="/image/project/diag2-3.png" alt="" />
+            <img loading="lazy" src="/image/project/diag2-4.png" alt="" />
           </div>
         </div>
       </div>
@@ -445,6 +455,7 @@ export const AptekiPage = () => {
           </div>
           <div className={classNames(styles.flexEnd, styles.twoColumns)}>
             <img
+              loading="lazy"
               className={styles.radius12}
               src="/image/project/kotik.gif"
               alt=""
@@ -458,7 +469,7 @@ export const AptekiPage = () => {
           <h4 className={classNames(styles.h1, styles.textCenter)}>
             Концепт главного экрана приложения
           </h4>
-          <img src="/image/project/image-phone.png" alt="" />
+          <img loading="lazy" src="/image/project/image-phone.png" alt="" />
         </div>
       </div>
     </>
