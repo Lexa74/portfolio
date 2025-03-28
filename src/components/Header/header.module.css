@@ -29,14 +29,4 @@
     .mobileBtn {
         display: block;
     }
-    .header {
-        top: 0;
-        transform: translateY(-100%);
-        transition: transform 0.3s ease;
-    }
-
-    body:active .header,
-    body:focus-within .header {
-        transform: translateY(0);
-    }
 }
