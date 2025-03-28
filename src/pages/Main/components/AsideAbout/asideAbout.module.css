@@ -87,5 +87,9 @@
     .about {
         position: static;
         max-width: initial;
+        height: initial;
+    }
+    .about__wrapper {
+        margin-bottom: 20px;
     }
 }

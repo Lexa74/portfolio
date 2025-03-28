@@ -249,7 +249,7 @@ export const AptekiPage = () => {
         src="/image/project/Table-4%201.png"
         alt=""
       />
-      <div className={styles.blueBlock}>
+      <div className={classNames(styles.blueBlock, styles.mb40)}>
         <h4 className={styles.blueBlockWhiteText}>
           Выводы по гипотезам, исходя из результатов интервью
         </h4>
@@ -377,7 +377,9 @@ export const AptekiPage = () => {
         </ol>
       </div>
       <div className={styles.block}>
-        <h4 className={styles.title24}>Количественные исследования</h4>
+        <span className={classNames(styles.title24, styles.mb12)}>
+          Количественные исследования
+        </span>
         <Link
           className={classNames(
             styles.subTitle,

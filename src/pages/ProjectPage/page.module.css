@@ -15,6 +15,8 @@
 
 .title24 {
     font-size: 24px;
+    font-family: Gilroy-600;
+    display: block;
 }
 
 .projectPage p {
@@ -98,7 +100,7 @@ li:last-child {
 }
 
 .mb40 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .flex {
