@@ -5,6 +5,7 @@ import styles from './layoutProject.module.css';
 import { Footer } from '../../components/Footer/Footer.tsx';
 import globalS from '/src/UI/sharedStyles.module.css';
 import classNames from 'classnames';
+import './page.css';
 
 export const LayoutProject = () => {
   const { pageId } = useParams();
@@ -19,6 +20,7 @@ export const LayoutProject = () => {
           styles.content,
           globalS.wrapperInnerPage,
           globalS.paddingTop,
+          'projectPage',
         )}
       >
         {project && <project.pageComponent />}

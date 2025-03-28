@@ -45,9 +45,9 @@ export const AptekiPage = () => {
             />
             <div>
               <h2 className={styles.blueBlockTitle}>Персона</h2>
-              <h3 className={styles.blueBlockSubtitle}>
+              <p className={styles.blueBlockSubtitle}>
                 Аня, 25 лет, работает удаленно и живет в новом районе города.
-              </h3>
+              </p>
             </div>
           </div>
           <div>
@@ -249,7 +249,7 @@ export const AptekiPage = () => {
         src="/image/project/Table-4%201.png"
         alt=""
       />
-      <div className={classNames(styles.blueBlock, styles.mb40)}>
+      <div className={styles.blueBlock}>
         <h4 className={styles.blueBlockWhiteText}>
           Выводы по гипотезам, исходя из результатов интервью
         </h4>
