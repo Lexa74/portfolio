@@ -1,9 +1,11 @@
 import styles from './footer.module.css';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames';
+import globalS from '/src/UI/sharedStyles.module.css';
 
 export const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <div className={classNames(styles.footer, globalS.wrapperInnerPage)}>
       <Link to={'/'} className={styles.goHome}>
         <img className={styles.footer__arr} src="/image/arr-back.svg" alt="" />
         <span>Вернуться на главную</span>

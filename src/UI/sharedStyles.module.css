@@ -1,0 +1,45 @@
+.wrapper {
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+}
+
+.wrapperInnerPage {
+    padding-left: calc(50% - calc(976px / 2));
+    padding-right: calc(50% - calc(976px / 2));
+}
+
+.blueText {
+    color: #5790B4;
+}
+
+.paddingTop {
+    padding-top: calc(40px + 79px); /* margin + высота header */
+}
+
+@media (max-width: 1024px)  {
+    .wrapper {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .wrapperInnerPage {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .paddingTop {
+        padding-top: calc(20px + 79px); /* margin + высота header */
+    }
+}
+
+@media (max-width: 478px)  {
+    .wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .wrapperInnerPage {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

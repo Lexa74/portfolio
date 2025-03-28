@@ -2,11 +2,12 @@ import styles from './mainContent.module.css';
 import { data } from '../../../../data.ts';
 import classNames from 'classnames';
 import { Project } from '../Project/Project.tsx';
+import globalS from '/src/UI/sharedStyles.module.css';
 
 export const MainContent = () => {
   return (
     <div>
-      <div className={styles.mainContent}>
+      <div className={classNames(styles.mainContent, globalS.paddingTop)}>
         {data.map((card) => (
           <Project key={card.id} card={card} />
         ))}

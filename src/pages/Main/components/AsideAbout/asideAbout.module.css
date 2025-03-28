@@ -1,5 +1,4 @@
 .about {
-    composes: paddingTop from '/src/UI/sharedStyles.css';
     max-width: 392px;
     top: 0;
     left: 0;
@@ -33,7 +32,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 280px;
+    width: 100%;
     background-image: url("/image/elements.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -62,9 +61,31 @@
 }
 
 .about__link {
-    composes: blueText from '/src/UI/sharedStyles.css';
+    composes: blueText from '/src/UI/sharedStyles.module.css';
     text-decoration: underline;
 }
 .about__btn {
 
+}
+
+@media (max-width: 1024px) {
+    .about {
+        max-width: 298px;
+    }
+    .about__title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        max-width: 336px;
+    }
+}
+
+@media (max-width: 478px) {
+    .about {
+        position: static;
+        max-width: initial;
+    }
 }

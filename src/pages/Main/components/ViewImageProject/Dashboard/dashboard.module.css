@@ -37,3 +37,30 @@
     bottom: -45px;
     left: -30px;
 }
+
+@media (max-width: 1024px) {
+    .wrapperImages {
+        padding: 34px 31px;
+    }
+    .image {
+        position: absolute;
+        max-width: 200px;
+        transition: .3s all;
+    }
+
+    .image1.isHover {
+        top: -20px;
+        right: -15px;
+    }
+
+    .image2.isHover {
+        bottom: -25px;
+        left: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapperImages {
+        padding: 31px;
+    }
+}

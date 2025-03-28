@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { data } from '../../data.ts';
 import styles from './layoutProject.module.css';
 import { Footer } from '../../components/Footer/Footer.tsx';
+import globalS from '/src/UI/sharedStyles.module.css';
+import classNames from 'classnames';
 
 export const LayoutProject = () => {
   const { pageId } = useParams();
@@ -12,7 +14,13 @@ export const LayoutProject = () => {
   return (
     <>
       <Header page={'inner'} />
-      <div className={styles.content}>
+      <div
+        className={classNames(
+          styles.content,
+          globalS.wrapperInnerPage,
+          globalS.paddingTop,
+        )}
+      >
         {project && <project.pageComponent />}
       </div>
       <Footer />

@@ -1,9 +1,11 @@
 import styles from './asideAbout.module.css';
 import { Button } from '../../../../UI/Button/Button.tsx';
+import classNames from 'classnames';
+import globalS from '/src/UI/sharedStyles.module.css';
 
 export const AsideAbout = () => {
   return (
-    <aside className={styles.about}>
+    <aside className={classNames(styles.about, globalS.paddingTop)}>
       <div className={styles.about__wrapper}>
         <div className={styles.wrapperAvatar}>
           <img className={styles.avatar} src="/image/avatar.png" alt={''} />

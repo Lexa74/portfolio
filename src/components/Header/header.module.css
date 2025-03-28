@@ -1,5 +1,4 @@
 .header {
-    composes: wrapper from '/src/UI/sharedStyles.css';
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +17,26 @@
     color: #1A3445;
 }
 
-.wrapperInnerPage {
-    composes: wrapper-inner-page from '/src/UI/sharedStyles.css';
+.mobileBtn {
+    display: none;
+}
+
+@media (max-width: 478px) {
+    .desktopBtn {
+        display: none;
+    }
+
+    .mobileBtn {
+        display: block;
+    }
+    .header {
+        top: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    body:active .header,
+    body:focus-within .header {
+        transform: translateY(0);
+    }
 }
