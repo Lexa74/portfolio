@@ -28,13 +28,6 @@ export const Footer = () => {
         <a
           target="_blank"
           className={styles.footer__link}
-          href="https://www.behance.net/pletnerdesign"
-        >
-          Behance
-        </a>
-        <a
-          target="_blank"
-          className={styles.footer__link}
           href="mailto:pletneranastasia@gmail.com"
         >
           pletneranastasia@gmail.com

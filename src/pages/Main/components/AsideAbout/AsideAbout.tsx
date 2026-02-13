@@ -12,7 +12,7 @@ export const AsideAbout = () => {
         </div>
         <div className={styles.about__content}>
           <h1 className={styles.about__title}>
-            Привет! Меня зовут Настя, я UI/UX дизайнер с опытом более 1 года
+            Привет! Меня зовут Настя, я UI/UX дизайнер с опытом 2 года
           </h1>
           <div className={styles.about__links}>
             <a
@@ -34,13 +34,7 @@ export const AsideAbout = () => {
               className={styles.about__link}
               href="https://www.behance.net/pletnerdesign"
             >
-              Behance
-            </a>
-            <a
-              target="_blank"
-              className={styles.about__link}
-              href="mailto:pletneranastasia@gmail.com"
-            >
+              
               pletneranastasia@gmail.com
             </a>
           </div>
@@ -58,7 +52,7 @@ export const AsideAbout = () => {
       </div>
       <a
         target={'_blank'}
-        href="https://drive.google.com/file/d/1QXX8H5yBIHoZ8iwHe4AyvIyVpcS14Yyb/view"
+        href="https://drive.google.com/file/d/1vL_AgiVcspeFZyPGRXV8tTwfnq3TSQBd/view?usp=sharing"
       >
         <Button className={styles.about__btn}>Посмотреть CV</Button>
       </a>
