@@ -88,7 +88,11 @@ li:last-child {
 }
 
 .mb0 {
-    margin-bottom: 0;
+    margin-bottom: 0!important;
+}
+
+.lh100 {
+    line-height: 100%!important;
 }
 
 .mb12 {
@@ -110,6 +114,10 @@ li:last-child {
 
 .flexEnd {
     align-items: flex-end;
+}
+
+.flexStart {
+    align-items: flex-start;
 }
 
 img {
@@ -161,4 +169,10 @@ img {
 
 .radius12 {
     border-radius: 12px;
+}
+
+@media (max-width: 590px) {
+    .twoColumns {
+        grid-template-columns: 1fr;
+    }
 }

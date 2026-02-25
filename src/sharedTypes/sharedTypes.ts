@@ -5,5 +5,5 @@ export interface IProject {
   description: string | null;
   component: React.ComponentType<{ isHover: boolean }> | null;
   pageId: string;
-  pageComponent: React.ComponentType;
+  pageComponent: React.ComponentType | null;
 }

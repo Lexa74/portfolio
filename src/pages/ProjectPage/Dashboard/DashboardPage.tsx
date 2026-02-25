@@ -3,7 +3,7 @@ import styles from '../page.module.css';
 export const DashboardPage = () => {
   return (
     <>
-      <h1>
+      <h1 className={styles.lh100}>
         CampaignCore Dashboard: Гибкий и функциональный интерфейс для аналитики
       </h1>
       <div className={styles.divider}></div>

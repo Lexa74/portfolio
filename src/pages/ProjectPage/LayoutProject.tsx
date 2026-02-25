@@ -23,7 +23,7 @@ export const LayoutProject = () => {
           'projectPage',
         )}
       >
-        {project && <project.pageComponent />}
+        {project && project.pageComponent && <project.pageComponent />}
       </div>
       <Footer />
     </>

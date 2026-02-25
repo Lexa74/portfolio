@@ -37,7 +37,7 @@ export const AptekiPage = () => {
       </div>
       <div className={classNames(styles.twoColumns)}>
         <div className={classNames(styles.blueBlock, styles.column)}>
-          <div className={styles.flex}>
+          <div className={classNames(styles.flex, styles.flexStart)}>
             <img
               loading="lazy"
               className={styles.imagePersona}
@@ -420,6 +420,12 @@ export const AptekiPage = () => {
         </div>
       </div>
       <div className={styles.twoColumns}>
+        <div>
+          <h4 className={classNames(styles.h1, styles.textCenter)}>
+            Концепт главного экрана приложения
+          </h4>
+          <img loading="lazy" src="/image/project/image-phone.png" alt="" />
+        </div>
         <div
           className={classNames(
             styles.blueBlock,
@@ -433,24 +439,24 @@ export const AptekiPage = () => {
             </h4>
 
             <p>
-              Три из четырех гипотез подтвердились. Оказалось, что люди чаще
-              покупают витамины в интернете, чем в аптеках.
+              Три из четырех гипотез подтвердились. Оказалось, что люди чаще
+              покупают витамины в интернете, чем в аптеках.
             </p>
             <p>
               <span className={styles.blueBlockWhiteText}>
                 Основные боли пользователей:{' '}
               </span>
-              Длинные очереди и долгое обслуживание
+              Длинные очереди и долгое обслуживание
             </p>
             <p>
               <span className={styles.blueBlockWhiteText}>Решение: </span>
-              Разработка приложения, с помощью которого можно найти аптеку
-              с нужными препаратами, наиболее подходящими для пользователя
-              ценами и удобным местоположением. Заказ будет передаваться
-              фармацевту в выбранную аптеку и собираться заранее. Получить его
-              можно будет по уникальному коду. Для этого предусмотрено отдельное
-              окно для онлайн-заказов, где очереди практически не будет
-              благодаря сокращению времени обслуживания.
+              Разработка приложения, с помощью которого можно найти аптеку с
+              нужными препаратами, наиболее подходящими для пользователя ценами
+              и удобным местоположением. Заказ будет передаваться фармацевту в
+              выбранную аптеку и собираться заранее. Получить его можно будет по
+              уникальному коду. Для этого предусмотрено отдельное окно для
+              онлайн-заказов, где очереди практически не будет благодаря
+              сокращению времени обслуживания.
             </p>
           </div>
           <div className={classNames(styles.flexEnd, styles.twoColumns)}>
@@ -461,15 +467,9 @@ export const AptekiPage = () => {
               alt=""
             />
             <h5 className={classNames(styles.blueBlockWhiteText, styles.mb0)}>
-              Спасибо за прочтение!
+              Спасибо за прочтение!
             </h5>
           </div>
-        </div>
-        <div>
-          <h4 className={classNames(styles.h1, styles.textCenter)}>
-            Концепт главного экрана приложения
-          </h4>
-          <img loading="lazy" src="/image/project/image-phone.png" alt="" />
         </div>
       </div>
     </>

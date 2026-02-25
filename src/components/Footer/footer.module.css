@@ -29,3 +29,17 @@
 .footer__arr {
     width: inherit;
 }
+
+@media (max-width: 670px) {
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer__link {
+        font-size: 14px;
+    }
+}
