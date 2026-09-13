@@ -37,11 +37,34 @@
   src: local('Gilroy-Regular'), url('/fonts/Gilroy-Regular.woff') format('woff');
 }
 
+:root {
+  --color-accent: #C04A6E;
+  --color-accent-dark: #9C3A58;
+  --color-accent-tint: #F5DEE6;
+  --color-bg: #FBF9F6;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Gilroy-400', 'arial';
   color: #1A3445;
+  background-color: var(--color-bg);
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("/image/paper-texture.png");
+  background-size: 640px 896px;
+  background-position: top left;
+  background-repeat: repeat;
+  opacity: 0.22;
+  mix-blend-mode: multiply;
 }
 
 * {

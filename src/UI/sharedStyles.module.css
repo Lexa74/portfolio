@@ -9,11 +9,12 @@
 }
 
 .blueText {
-    color: #5790B4;
+    color: var(--color-accent);
 }
 
 .paddingTop {
-    padding-top: calc(40px + 79px); /* margin + высота header */
+    /* header больше не fixed, это просто отступ от него до контента */
+    padding-top: 40px;
 }
 
 @media (max-width: 1024px)  {
@@ -28,7 +29,7 @@
     }
 
     .paddingTop {
-        padding-top: calc(20px + 79px); /* margin + высота header */
+        padding-top: 20px;
     }
 }
 

@@ -10,18 +10,29 @@
 }
 
 .button.primary {
-    background-color: #5790B4;
+    background-color: var(--color-accent);
     color: white;
     border: 1px solid transparent;
 }
 
 .button.primary:hover {
-    background-color: white;
-    color: #5790B4;
-    border: 1px solid #5790B4;
+    background-color: var(--color-accent-dark);
 }
 .button.primary:active {
-    background-color: #EBF0F2;
-    color: #5790B4;
-    border: 1px solid #5790B4;
+    background-color: var(--color-accent-dark);
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #1A3445;
+    border: 1px solid #1A3445;
+}
+
+.button.secondary:hover {
+    background-color: #1A3445;
+    color: white;
+}
+.button.secondary:active {
+    background-color: #1A3445;
+    color: white;
 }

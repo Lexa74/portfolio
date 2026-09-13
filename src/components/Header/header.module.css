@@ -1,36 +1,31 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: fixed;
-    background-color: white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: transparent;
     width: 100%;
-    z-index: 999;
 }
 
-.header__name {
-    font-size: 20px;
-    font-family: 'Gilroy-600';
-    text-decoration: none;
-    color: #1A3445;
+.header__logo {
+    display: block;
+    height: 56px;
 }
 
-.mobileBtn {
-    display: none;
+.header__logo img {
+    display: block;
+    height: 100%;
+    width: auto;
 }
 
 @media (max-width: 478px) {
-    .desktopBtn {
-        display: none;
+    .header {
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
 
-    .mobileBtn {
-        display: block;
-    }
-    .header {
-        padding-top: 10px;
-        padding-bottom: 10px;
+    .header__logo {
+        height: 36px;
     }
 }
