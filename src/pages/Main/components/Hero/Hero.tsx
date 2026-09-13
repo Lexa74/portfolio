@@ -50,14 +50,14 @@ export const Hero = () => {
           </p>
         </div>
         <div className={styles.hero__actions}>
-          <a target={'_blank'} href="https://t.me/fraupletner">
-            <Button>Пригласить на собеседование</Button>
-          </a>
           <a
             target={'_blank'}
             href="https://drive.google.com/file/d/1vL_AgiVcspeFZyPGRXV8tTwfnq3TSQBd/view?usp=sharing"
           >
             <Button typeStyle="secondary">Посмотреть CV</Button>
+          </a>
+          <a target={'_blank'} href="https://t.me/fraupletner">
+            <Button>Пригласить на собеседование</Button>
           </a>
         </div>
       </div>

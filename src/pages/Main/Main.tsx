@@ -3,6 +3,7 @@ import styles from './main.module.css';
 import globalS from '/src/UI/sharedStyles.module.css';
 import { Hero } from './components/Hero/Hero.tsx';
 import { MainContent } from './components/MainContent/MainContent.tsx';
+import { Footer } from '../../components/Footer/Footer.tsx';
 import classNames from 'classnames';
 
 export const Main = () => {
@@ -19,6 +20,7 @@ export const Main = () => {
         <Hero />
         <MainContent />
       </div>
+      <Footer />
     </>
   );
 };

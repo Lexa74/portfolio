@@ -3,7 +3,7 @@
     align-items: center;
     gap: 48px;
     margin-top: 40px;
-    margin-bottom: 130px;
+    margin-bottom: 170px;
 }
 
 .hero__photo {
@@ -29,7 +29,7 @@
 .hero__title {
     display: block;
     width: 100%;
-    max-width: 280px;
+    max-width: 480px;
     height: auto;
     margin-bottom: 12px;
 }
@@ -86,7 +86,7 @@
     }
 
     .hero__title {
-        max-width: 240px;
+        max-width: 400px;
     }
 }
 
@@ -97,7 +97,7 @@
         text-align: center;
         gap: 24px;
         margin-top: 20px;
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
 
     .hero__photo {
@@ -109,7 +109,7 @@
     }
 
     .hero__title {
-        max-width: 220px;
+        max-width: 320px;
     }
 
     .hero__links {
@@ -123,7 +123,7 @@
 
 @media (max-width: 478px) {
     .hero {
-        margin-bottom: 64px;
+        margin-bottom: 80px;
     }
 
     .hero__photo {
@@ -131,6 +131,6 @@
     }
 
     .hero__title {
-        max-width: 180px;
+        max-width: 240px;
     }
 }

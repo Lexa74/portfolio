@@ -13,6 +13,7 @@ export const Project = ({ card }: ProjectProps) => {
   const onMouseOut = () => {
     setIsHover(false);
   };
+
   return (
     <Link
       onMouseOver={onMouseOver}
@@ -20,13 +21,13 @@ export const Project = ({ card }: ProjectProps) => {
       to={`/project/${card.pageId}`}
       className={styles.card}
     >
-      {card.component ? (
-        <div className={styles.card__image}>
+      <div className={styles.card__image}>
+        {card.component ? (
           <card.component isHover={isHover} />
-        </div>
-      ) : (
-        <img className={styles.card__image} src={card.src} alt={card.name} />
-      )}
+        ) : (
+          <img src={card.src} alt={card.name} />
+        )}
+      </div>
 
       <h3 className={styles.card__title}>{card.name}</h3>
       <p className={styles.card__description}>{card.description}</p>

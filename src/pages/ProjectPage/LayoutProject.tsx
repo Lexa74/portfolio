@@ -25,7 +25,7 @@ export const LayoutProject = () => {
       >
         {project && <project.pageComponent />}
       </div>
-      <Footer />
+      <Footer page={'inner'} />
     </>
   );
 };

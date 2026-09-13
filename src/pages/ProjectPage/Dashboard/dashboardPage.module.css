@@ -1,0 +1,26 @@
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/*
+  .projectPage h2 в page.css даёт margin-bottom:12px, который складывается
+  с flex-gap:12px выше (gap не перекрывает margin) — итого было 24px
+  вместо 12px. Обнуляем margin явно, специфичность (0,2,1) уверенно
+  перебивает (0,1,1) у .projectPage h2.
+*/
+:global(.projectPage) .textBlock h2 {
+    margin-bottom: 0;
+}
+
+.image {
+    position: relative;
+    left: -20px;
+}

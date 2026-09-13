@@ -3,13 +3,30 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import globalS from '/src/UI/sharedStyles.module.css';
 
-export const Footer = () => {
+type FooterProps = {
+  page?: 'main' | 'inner';
+};
+
+export const Footer = ({ page = 'main' }: FooterProps) => {
+  const isInner = page === 'inner';
+
   return (
-    <div className={classNames(styles.footer, globalS.wrapperInnerPage)}>
-      <Link to={'/'} className={styles.goHome}>
-        <img className={styles.footer__arr} src="/image/arr-back.svg" alt="" />
-        <span>Вернуться на главную</span>
-      </Link>
+    <div
+      className={classNames(styles.footer, {
+        [globalS.wrapperInnerPage]: isInner,
+        [globalS.wrapper]: !isInner,
+      })}
+    >
+      {isInner ? (
+        <Link to={'/'} className={styles.goHome}>
+          <img className={styles.footer__arr} src="/image/arr-back.svg" alt="" />
+          <span>Вернуться на главную</span>
+        </Link>
+      ) : (
+        <Link to={'/'} className={styles.footer__logo}>
+          <img src="/image/logo.png" alt="Pletner Design" />
+        </Link>
+      )}
       <div className={styles.footer__linkBox}>
         <a
           target="_blank"

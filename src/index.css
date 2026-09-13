@@ -44,6 +44,10 @@
   --color-bg: #FBF9F6;
 }
 
+html {
+  background-color: var(--color-bg);
+}
+
 body {
   margin: 0;
   padding: 0;

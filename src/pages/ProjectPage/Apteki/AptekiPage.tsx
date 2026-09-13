@@ -101,18 +101,12 @@ export const AptekiPage = () => {
           </div>
         </div>
       </div>
-      <img
-        loading="lazy"
-        className={styles.mb20}
-        src="/image/project/table1.png"
-        alt=""
-      />
-      <img
-        loading="lazy"
-        className={styles.mb20}
-        src="/image/project/table2.png"
-        alt=""
-      />
+      <div className={classNames(styles.imageFrame, styles.mb20)}>
+        <img loading="lazy" src="/image/project/table1.png" alt="" />
+      </div>
+      <div className={classNames(styles.imageFrame, styles.mb20)}>
+        <img loading="lazy" src="/image/project/table2.png" alt="" />
+      </div>
       <div className={classNames(styles.blueBlock)}>
         <h3 className={styles.blueBlockTitle}>Гипотезы</h3>
         <p>
@@ -229,36 +223,21 @@ export const AptekiPage = () => {
           <li>Как часто вы заказываете лекарства онлайн?</li>
         </ol>
       </div>
-      <img
-        loading="lazy"
-        className={styles.block}
-        src="/image/project/Table%201.png"
-        alt=""
-      />
-      <img
-        loading="lazy"
-        className={styles.block}
-        src="/image/project/Table-1%201.png"
-        alt=""
-      />
-      <img
-        loading="lazy"
-        className={styles.block}
-        src="/image/project/Table-2%201.png"
-        alt=""
-      />
-      <img
-        loading="lazy"
-        className={styles.block}
-        src="/image/project/Table-3%201.png"
-        alt=""
-      />
-      <img
-        loading="lazy"
-        className={styles.block}
-        src="/image/project/Table-4%201.png"
-        alt=""
-      />
+      <div className={classNames(styles.imageFrame, styles.block)}>
+        <img loading="lazy" src="/image/project/Table%201.png" alt="" />
+      </div>
+      <div className={classNames(styles.imageFrame, styles.block)}>
+        <img loading="lazy" src="/image/project/Table-1%201.png" alt="" />
+      </div>
+      <div className={classNames(styles.imageFrame, styles.block)}>
+        <img loading="lazy" src="/image/project/Table-2%201.png" alt="" />
+      </div>
+      <div className={classNames(styles.imageFrame, styles.block)}>
+        <img loading="lazy" src="/image/project/Table-3%201.png" alt="" />
+      </div>
+      <div className={classNames(styles.imageFrame, styles.block)}>
+        <img loading="lazy" src="/image/project/Table-4%201.png" alt="" />
+      </div>
       <div className={classNames(styles.blueBlock, styles.mb40)}>
         <h4 className={styles.blueBlockWhiteText}>
           Выводы по гипотезам, исходя из результатов интервью
@@ -406,16 +385,32 @@ export const AptekiPage = () => {
         </Link>
         <div className={styles.twoColumns}>
           <div className={styles.columnsSpaceBetween}>
-            <img loading="lazy" src="/image/project/diag1.png" alt="" />
-            <img loading="lazy" src="/image/project/diag2.png" alt="" />
-            <img loading="lazy" src="/image/project/diag3.png" alt="" />
-            <img loading="lazy" src="/image/project/diag4.png" alt="" />
+            <div className={styles.imageFrame}>
+              <img loading="lazy" src="/image/project/diag1.png" alt="" />
+            </div>
+            <div className={styles.imageFrame}>
+              <img loading="lazy" src="/image/project/diag2.png" alt="" />
+            </div>
+            <div className={styles.imageFrame}>
+              <img loading="lazy" src="/image/project/diag3.png" alt="" />
+            </div>
+            <div className={styles.imageFrame}>
+              <img loading="lazy" src="/image/project/diag4.png" alt="" />
+            </div>
           </div>
           <div className={styles.columnsSpaceBetween}>
-            <img loading="lazy" src="/image/project/diag2-1.png" alt="" />
-            <img loading="lazy" src="/image/project/diag2-2.png" alt="" />
-            <img loading="lazy" src="/image/project/diag2-3.png" alt="" />
-            <img loading="lazy" src="/image/project/diag2-4.png" alt="" />
+            <div className={styles.imageFrame}>
+              <img loading="lazy" src="/image/project/diag2-1.png" alt="" />
+            </div>
+            <div className={styles.imageFrame}>
+              <img loading="lazy" src="/image/project/diag2-2.png" alt="" />
+            </div>
+            <div className={styles.imageFrame}>
+              <img loading="lazy" src="/image/project/diag2-3.png" alt="" />
+            </div>
+            <div className={styles.imageFrame}>
+              <img loading="lazy" src="/image/project/diag2-4.png" alt="" />
+            </div>
           </div>
         </div>
       </div>

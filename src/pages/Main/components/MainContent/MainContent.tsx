@@ -10,11 +10,9 @@ export const MainContent = () => {
         <Project key={card.id} card={card} />
       ))}
       <a href="#" className={classNames(styles.card, styles.wide)}>
-        <img
-          className={styles.card__image}
-          src={'/image/portfolio/diffImage.png'}
-          alt={''}
-        />
+        <div className={styles.card__image}>
+          <img src={'/image/portfolio/diffImage.png'} alt={''} />
+        </div>
         <h3 className={styles.card__title}>Другое</h3>
         <p className={styles.card__description}>
           Здесь представлены некоторые выполненные мной тестовые и другие просто

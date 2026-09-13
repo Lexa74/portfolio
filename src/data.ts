@@ -4,6 +4,7 @@ import { Dashboard } from './pages/Main/components/ViewImageProject/Dashboard/Da
 import { Hackwish } from './pages/Main/components/ViewImageProject/Hackwish/Hackwish.tsx';
 import { AptekiPage } from './pages/ProjectPage/Apteki/AptekiPage.tsx';
 import { DashboardPage } from './pages/ProjectPage/Dashboard/DashboardPage.tsx';
+import { MovieMatePage } from './pages/ProjectPage/MovieMate/MovieMatePage.tsx';
 
 export const data: IProject[] = [
   {
@@ -33,7 +34,7 @@ export const data: IProject[] = [
       'Концепт приложения, разработанный на основе исследований пользователей',
     component: MovieMate,
     pageId: 'movie-mate',
-    pageComponent: AptekiPage,
+    pageComponent: MovieMatePage,
   },
   {
     id: 4,
