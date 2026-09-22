@@ -1,0 +1,17 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+:global(.projectPage) .text p {
+    margin-bottom: 12px;
+}
+
+:global(.projectPage) .text p:last-child {
+    margin-bottom: 0;
+}

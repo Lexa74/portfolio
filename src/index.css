@@ -55,6 +55,7 @@ body {
   color: #1A3445;
   background-color: var(--color-bg);
   position: relative;
+  isolation: isolate;
 }
 
 body::before {

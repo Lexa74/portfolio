@@ -1,29 +1,31 @@
 import { IProject } from './sharedTypes/sharedTypes.ts';
 import { MovieMate } from './pages/Main/components/ViewImageProject/MovieMate/MovieMate.tsx';
 import { Dashboard } from './pages/Main/components/ViewImageProject/Dashboard/Dashboard.tsx';
-import { Hackwish } from './pages/Main/components/ViewImageProject/Hackwish/Hackwish.tsx';
+import { Apteki } from './pages/Main/components/ViewImageProject/Apteki/Apteki.tsx';
 import { AptekiPage } from './pages/ProjectPage/Apteki/AptekiPage.tsx';
 import { DashboardPage } from './pages/ProjectPage/Dashboard/DashboardPage.tsx';
 import { MovieMatePage } from './pages/ProjectPage/MovieMate/MovieMatePage.tsx';
+import { CoffeeBreakPage } from './pages/ProjectPage/CoffeeBreak/CoffeeBreakPage.tsx';
 
 export const data: IProject[] = [
+  {
+    id: 5,
+    src: '/image/portfolio/CoffeeBreak/cover.png',
+    name: 'Coffee Break Languages',
+    description:
+      'Мобильное приложение для изучения языков со структурой по уровням CEFR (A1–C2)',
+    component: null,
+    pageId: 'coffee-break',
+    pageComponent: CoffeeBreakPage,
+  },
   {
     id: 1,
     src: '/image/portfolio/po1.png',
     name: 'Аптеки рядом',
     description:
       'Концепт приложения, разработанный на основе исследований пользователей',
-    component: null,
+    component: Apteki,
     pageId: 'apteki',
-    pageComponent: AptekiPage,
-  },
-  {
-    id: 2,
-    src: '/image/portfolio/po2.png',
-    name: 'HackWish',
-    description: 'Мини-приложение для генерации поздравлений с помощью ИИ',
-    component: Hackwish,
-    pageId: 'hackwish',
     pageComponent: AptekiPage,
   },
   {
@@ -31,7 +33,7 @@ export const data: IProject[] = [
     src: '/image/portfolio/po1.png',
     name: 'Movie Mate',
     description:
-      'Концепт приложения, разработанный на основе исследований пользователей',
+      'Приложение для поиска фильмов на основе предпочтений пользователя',
     component: MovieMate,
     pageId: 'movie-mate',
     pageComponent: MovieMatePage,

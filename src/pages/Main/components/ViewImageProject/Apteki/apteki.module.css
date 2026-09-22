@@ -1,0 +1,23 @@
+.aptekiImage {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 49 / 40;
+    background: #DBF6FB;
+}
+
+.screen {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    width: 41%;
+    margin-left: -20.5%;
+    transform-origin: 50% 100%;
+    transform: scale(1);
+    filter: drop-shadow(0 14px 20px rgba(26, 52, 69, .18));
+    transition: .3s all;
+}
+
+.screen.isHover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 22px 28px rgba(26, 52, 69, .24));
+}
