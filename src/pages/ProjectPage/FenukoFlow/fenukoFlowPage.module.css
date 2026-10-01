@@ -1,0 +1,102 @@
+.titleRow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.appIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    flex-shrink: 0;
+}
+
+:global(.projectPage) h1.titleGrow,
+.titleGrow {
+    flex: 1 1 auto;
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+
+.appStoreBadge {
+    flex-shrink: 0;
+    display: flex;
+}
+
+.appStoreBadge img {
+    width: auto;
+    height: 40px;
+}
+
+.metaRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 32px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.metaRow b {
+    font-family: Gilroy-600;
+    font-weight: normal;
+}
+
+:global(.projectPage) h4.featureHeading,
+.featureHeading {
+    font-family: Gilroy-400;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-accent);
+    margin-bottom: 4px;
+}
+
+.featureBlock {
+    margin-bottom: 20px;
+}
+
+.featureImages {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+:global(.projectPage) p.gap12,
+.gap12 {
+    margin-bottom: 12px;
+}
+
+.gap20 {
+    margin-bottom: 20px;
+}
+
+.gap32 {
+    margin-bottom: 32px;
+}
+
+.gapTop32 {
+    margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+    .titleRow {
+        gap: 12px;
+    }
+
+    .appIcon {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+    }
+
+    .appStoreBadge img {
+        height: 32px;
+    }
+
+    .metaRow {
+        font-size: 14px;
+        gap: 6px 20px;
+    }
+}

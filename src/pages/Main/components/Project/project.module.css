@@ -15,16 +15,61 @@
 
 .card__title {
     font-family: Gilroy-600;
-    font-size: 24px;
-    margin-bottom: 4px;
+    font-size: 22px;
+    margin-bottom: 8px;
     color: #1A3445;
 }
 
-.card__description {
-    font-size: 16px;
-    color: #7D8C93;
+.card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.card__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background-color: var(--color-accent-tint);
+    color: var(--color-accent-dark);
+    font-size: 13px;
 }
 
 .card {
     display: block;
+}
+
+.card__disabled {
+    cursor: default;
+}
+
+.card__clickable {
+    cursor: pointer;
+}
+
+.card__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(26, 52, 69, .6);
+    opacity: 0;
+    transition: opacity .25s ease;
+    z-index: 10;
+}
+
+.card__overlayVisible {
+    opacity: 1;
+}
+
+.card__overlay span {
+    font-family: Gilroy-600;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
+    letter-spacing: .02em;
 }

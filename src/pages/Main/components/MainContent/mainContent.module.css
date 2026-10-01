@@ -1,4 +1,17 @@
 
+.title {
+    display: block;
+    width: 100%;
+    max-width: 177px;
+    height: auto;
+    margin: 0 auto 32px;
+}
+
+.titleOther {
+    max-width: 176px;
+    margin-top: 16px;
+}
+
 .mainContent {
     display: grid;
     gap: 32px;
@@ -42,12 +55,28 @@
 
 
 @media (max-width: 1024px) {
+    .title {
+        max-width: 147px;
+    }
+
+    .titleOther {
+        max-width: 146px;
+    }
+
     .mainContent {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
+    .title {
+        max-width: 118px;
+    }
+
+    .titleOther {
+        max-width: 117px;
+    }
+
     .card__image > img {
         height: 257px;
         object-fit: cover;
@@ -55,6 +84,14 @@
 }
 
 @media (max-width: 478px) {
+    .title {
+        max-width: 88px;
+    }
+
+    .titleOther {
+        max-width: 88px;
+    }
+
     .mainContent {
         grid-template-columns: 1fr;
     }

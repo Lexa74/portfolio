@@ -1,0 +1,97 @@
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 49 / 40;
+    background-color: #1F2747;
+}
+
+.bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.floating {
+    position: absolute;
+    transform: translateY(0) rotate(0deg);
+    transition: transform .5s ease;
+}
+
+.floating img {
+    width: 100%;
+    display: block;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, .25));
+}
+
+.floating.isHover {
+    animation-name: float;
+    animation-duration: var(--dur, 5s);
+    animation-delay: var(--delay, 0s);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(var(--amp, -7px)) rotate(var(--rot, 0deg));
+    }
+}
+
+.sparkleTop {
+    z-index: 1;
+    left: 79.5%;
+    top: 15.5%;
+    width: 11%;
+    --rot: 4deg;
+    --amp: -6px;
+    --dur: 6.5s;
+}
+
+.sparkleBottom {
+    z-index: 1;
+    left: 11.5%;
+    top: 72%;
+    width: 11.5%;
+    --rot: -4deg;
+    --amp: -5px;
+    --dur: 7s;
+    --delay: .6s;
+}
+
+.bubbleTop {
+    z-index: 2;
+    left: 18%;
+    top: 9%;
+    width: 60%;
+    --rot: 1.5deg;
+    --amp: -7px;
+    --dur: 6.8s;
+    --delay: .3s;
+}
+
+.bubbleBottom {
+    z-index: 2;
+    left: 27%;
+    top: 59%;
+    width: 56%;
+    --rot: -1.5deg;
+    --amp: -6px;
+    --dur: 7.5s;
+    --delay: 1s;
+}
+
+.bubbleCenter {
+    z-index: 3;
+    left: 18.5%;
+    top: 36%;
+    width: 62%;
+    --rot: 1deg;
+    --amp: -5px;
+    --dur: 6s;
+}
+

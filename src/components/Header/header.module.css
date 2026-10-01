@@ -2,15 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: transparent;
     width: 100%;
 }
 
 .header__logo {
     display: block;
-    height: 56px;
+    height: 48px;
     grid-column: 2;
     justify-self: center;
 }
@@ -70,12 +70,12 @@
 
 @media (max-width: 478px) {
     .header {
-        padding-top: 14px;
-        padding-bottom: 14px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     .header__logo {
-        height: 36px;
+        height: 32px;
     }
 
     .header__back {
