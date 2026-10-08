@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Main } from './pages/Main/Main.tsx';
 import { LayoutProject } from './pages/ProjectPage/LayoutProject.tsx';
 import { PrivacyPage } from './pages/Privacy/PrivacyPage.tsx';
+import { CollagesPage } from './pages/Collages/CollagesPage.tsx';
 import { ScrollToTop } from './components/ScrollToTop/ScrollToTop.tsx';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path={'/'} element={<Main />} />
         <Route path={'/project/:pageId'} element={<LayoutProject />} />
         <Route path={'/privacy'} element={<PrivacyPage />} />
+        <Route path={'/collages'} element={<CollagesPage />} />
       </Routes>
     </BrowserRouter>
   );
