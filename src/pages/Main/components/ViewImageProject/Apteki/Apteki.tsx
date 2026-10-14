@@ -13,8 +13,10 @@ export const Apteki = ({ isHover }: IViewImagesProp) => {
         className={classNames(styles.screen, {
           [styles.isHover]: isHover,
         })}
-        src="/image/portfolio/Apteki/screen.png"
+        src="/image/portfolio/Apteki/screen.webp"
         alt=""
+        loading="lazy"
+        decoding="async"
       />
     </div>
   );

@@ -64,7 +64,7 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-image: url("/image/paper-texture.png");
+  background-image: url("/image/paper-texture.webp");
   background-size: 640px 896px;
   background-position: top left;
   background-repeat: repeat;

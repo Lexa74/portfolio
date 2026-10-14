@@ -9,57 +9,57 @@ import '../ProjectPage/page.css';
 
 const images = [
   {
-    src: '/image/project/collages/collage-01.png',
+    src: '/image/project/collages/collage-01.webp',
     alt: 'Коллаж «don\'t give up» — вырезки из газет на фоне промышленного пейзажа',
   },
   {
-    src: '/image/project/collages/collage-02.png',
+    src: '/image/project/collages/collage-02.webp',
     alt: 'Коллаж с силуэтами в дверях поезда на акварельном фоне',
   },
   {
-    src: '/image/project/collages/collage-03.png',
+    src: '/image/project/collages/collage-03.webp',
     alt: 'Коллаж «Искусство — это язык, понятный всем людям» с обложкой Vogue и люстрой',
   },
   {
-    src: '/image/project/collages/collage-04.png',
+    src: '/image/project/collages/collage-04.webp',
     alt: 'Коллаж с лестницей особняка, вклеенным лесным пейзажем и сухим листом',
   },
   {
-    src: '/image/project/collages/collage-05.png',
+    src: '/image/project/collages/collage-05.webp',
     alt: 'Коллаж с японскими чайными плантациями и упаковкой чая',
   },
   {
-    src: '/image/project/collages/collage-06.png',
+    src: '/image/project/collages/collage-06.webp',
     alt: 'Коллаж с рисунками, вырезкой PIZZA и свечой',
   },
   {
-    src: '/image/project/collages/collage-07.png',
+    src: '/image/project/collages/collage-07.webp',
     alt: 'Коллаж «Зима» с цианотипией куполов и строками Пушкина',
   },
   {
-    src: '/image/project/collages/collage-08.png',
+    src: '/image/project/collages/collage-08.webp',
     alt: 'Коллаж «Любовь — это разрешить человеку быть таким, каким он готов быть»',
   },
   {
-    src: '/image/project/collages/collage-09.png',
+    src: '/image/project/collages/collage-09.webp',
     alt: 'Коллаж с шоколадом Tony\'s Chocolonely и подписью «crazy about chocolate»',
   },
   {
-    src: '/image/project/collages/collage-10.png',
+    src: '/image/project/collages/collage-10.webp',
     alt: 'Коллаж «Сон в летнюю ночь» с женщиной в красном плаще',
   },
   {
-    src: '/image/project/collages/collage-11.png',
+    src: '/image/project/collages/collage-11.webp',
     alt: 'Коллаж «Вы правда поверили, что мне подходит взрослая работа?»',
   },
   {
-    src: '/image/project/collages/collage-12.png',
+    src: '/image/project/collages/collage-12.webp',
     alt: 'Коллаж «Чего хотят женщины? Деньги, слава, кока-кола»',
   },
 ];
 
 const banner = {
-  src: '/image/project/collages/collage-banner.png',
+  src: '/image/project/collages/collage-banner.webp',
   alt: 'Коллаж-баннер с надписями BECHA и Spring, чёрно-белые фотографии',
 };
 

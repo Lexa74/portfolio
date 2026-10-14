@@ -24,7 +24,12 @@ export const Project = ({ card }: ProjectProps) => {
         {card.component ? (
           <card.component isHover={isHover} />
         ) : (
-          <img src={card.src} alt={card.name} />
+          <img
+            src={card.src}
+            alt={card.name}
+            loading="lazy"
+            decoding="async"
+          />
         )}
         {card.comingSoon && (
           <div

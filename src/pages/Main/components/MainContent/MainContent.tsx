@@ -11,7 +11,13 @@ export const MainContent = () => {
 
   return (
     <>
-      <img className={styles.title} src="/image/cases-title.png" alt="Кейсы" />
+      <img
+        className={styles.title}
+        src="/image/cases-title.webp"
+        alt="Кейсы"
+        loading="lazy"
+        decoding="async"
+      />
       <div className={styles.mainContent}>
         {data.map((card) => (
           <Project key={card.id} card={card} />
@@ -20,13 +26,20 @@ export const MainContent = () => {
 
       <img
         className={classNames(styles.title, styles.titleOther)}
-        src="/image/other-title.png"
+        src="/image/other-title.webp"
         alt="Другое"
+        loading="lazy"
+        decoding="async"
       />
       <div className={styles.mainContent}>
         <Link to="/collages" className={styles.card}>
           <div className={styles.card__image}>
-            <img src={'/image/portfolio/Other/collages.png'} alt={''} />
+            <img
+              src={'/image/portfolio/Other/collages.webp'}
+              alt={''}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </Link>
         <a
@@ -36,7 +49,12 @@ export const MainContent = () => {
           onMouseOut={() => setIsIconsHover(false)}
         >
           <div className={styles.card__image}>
-            <img src={'/image/portfolio/Other/icons.png'} alt={''} />
+            <img
+              src={'/image/portfolio/Other/icons.webp'}
+              alt={''}
+              loading="lazy"
+              decoding="async"
+            />
             <div
               className={classNames(styles.card__overlay, {
                 [styles.card__overlayVisible]: isIconsHover,
@@ -53,7 +71,12 @@ export const MainContent = () => {
           onMouseOut={() => setIsScreensHover(false)}
         >
           <div className={styles.card__image}>
-            <img src={'/image/portfolio/Other/screens.png'} alt={''} />
+            <img
+              src={'/image/portfolio/Other/screens.webp'}
+              alt={''}
+              loading="lazy"
+              decoding="async"
+            />
             <div
               className={classNames(styles.card__overlay, {
                 [styles.card__overlayVisible]: isScreensHover,

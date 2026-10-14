@@ -8,7 +8,7 @@ export const FenukoFlowPage = () => {
       <div className={ffStyles.titleRow}>
         <img
           className={ffStyles.appIcon}
-          src="/image/project/fenukoflow/icon.png"
+          src="/image/project/fenukoflow/icon.webp"
           alt=""
         />
         <h1 className={ffStyles.titleGrow}>
@@ -44,7 +44,7 @@ export const FenukoFlowPage = () => {
         <img
           loading="lazy"
           className={styles.radius12}
-          src="/image/project/fenukoflow/hero.png"
+          src="/image/project/fenukoflow/hero.webp"
           alt="Главный экран и чат Fenuko Flow"
         />
       </div>
@@ -128,7 +128,7 @@ export const FenukoFlowPage = () => {
         <img
           loading="lazy"
           className={styles.radius12}
-          src="/image/project/fenukoflow/structure-diagram.png"
+          src="/image/project/fenukoflow/structure-diagram.webp"
           alt="Схема пользовательского флоу Fenuko Flow"
         />
       </div>
@@ -166,7 +166,7 @@ export const FenukoFlowPage = () => {
         <img
           loading="lazy"
           className={classNames(styles.radius12, ffStyles.gap32)}
-          src="/image/project/fenukoflow/solutions-paywall.png"
+          src="/image/project/fenukoflow/solutions-paywall.webp"
           alt="Экраны Pro-подписки и докупки токенов"
         />
 
@@ -182,7 +182,7 @@ export const FenukoFlowPage = () => {
         <img
           loading="lazy"
           className={classNames(styles.radius12, ffStyles.gap32)}
-          src="/image/project/fenukoflow/solutions-push.png"
+          src="/image/project/fenukoflow/solutions-push.webp"
           alt="Пуш-уведомление и in-app баннер о готовом результате"
         />
 
@@ -213,7 +213,7 @@ export const FenukoFlowPage = () => {
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/fenukoflow/feature-settings.png"
+            src="/image/project/fenukoflow/feature-settings.webp"
             alt="Настройки генерации изображений и видео"
           />
         </div>
@@ -232,7 +232,7 @@ export const FenukoFlowPage = () => {
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/fenukoflow/feature-voice.png"
+            src="/image/project/fenukoflow/feature-voice.webp"
             alt="Состояния голосового ввода"
           />
         </div>
@@ -252,7 +252,7 @@ export const FenukoFlowPage = () => {
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/fenukoflow/feature-library.png"
+            src="/image/project/fenukoflow/feature-library.webp"
             alt="Библиотека сгенерированных изображений и видео"
           />
         </div>
@@ -285,7 +285,7 @@ export const FenukoFlowPage = () => {
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/fenukoflow/feature-cancel.png"
+            src="/image/project/fenukoflow/feature-cancel.webp"
             alt="Экраны отмены подписки"
           />
         </div>
@@ -308,7 +308,7 @@ export const FenukoFlowPage = () => {
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/fenukoflow/feature-errors.png"
+            src="/image/project/fenukoflow/feature-errors.webp"
             alt="Состояния ошибки генерации и исчерпанных лимитов"
           />
         </div>
@@ -341,7 +341,7 @@ export const FenukoFlowPage = () => {
         <img
           loading="lazy"
           className={styles.radius12}
-          src="/image/project/fenukoflow/appstore-preview.png"
+          src="/image/project/fenukoflow/appstore-preview.webp"
           alt="Пять превью-экранов Fenuko Flow для App Store"
         />
       </div>

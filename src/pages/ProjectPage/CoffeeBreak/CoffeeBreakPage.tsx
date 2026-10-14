@@ -8,7 +8,7 @@ export const CoffeeBreakPage = () => {
       <div className={cbStyles.titleRow}>
         <img
           className={cbStyles.appIcon}
-          src="/image/project/coffeebreak/icon.png"
+          src="/image/project/coffeebreak/icon.webp"
           alt=""
         />
         <h1 className={cbStyles.titleGrow}>
@@ -44,7 +44,7 @@ export const CoffeeBreakPage = () => {
         <img
           loading="lazy"
           className={styles.radius12}
-          src="/image/project/coffeebreak/hero.png"
+          src="/image/project/coffeebreak/hero.webp"
           alt="Главный экран, выбор уровня и прогресс в Coffee Break Languages"
         />
       </div>
@@ -90,7 +90,7 @@ export const CoffeeBreakPage = () => {
         <img
           loading="lazy"
           className={styles.radius12}
-          src="/image/project/coffeebreak/structure-diagram.png"
+          src="/image/project/coffeebreak/structure-diagram.webp"
           alt="Схема пользовательского флоу Coffee Break Languages"
         />
       </div>
@@ -134,7 +134,7 @@ export const CoffeeBreakPage = () => {
         <img
           loading="lazy"
           className={classNames(styles.radius12, cbStyles.gap20)}
-          src="/image/project/coffeebreak/onboarding.png"
+          src="/image/project/coffeebreak/onboarding.webp"
           alt="Первая версия пейволла: один экран для всех"
         />
 
@@ -149,7 +149,7 @@ export const CoffeeBreakPage = () => {
         <img
           loading="lazy"
           className={classNames(styles.radius12, cbStyles.gap20)}
-          src="/image/project/coffeebreak/paywall-ladder.png"
+          src="/image/project/coffeebreak/paywall-ladder.webp"
           alt="Финальная версия пейволла: персонализированная лестница тарифов"
         />
 
@@ -176,13 +176,13 @@ export const CoffeeBreakPage = () => {
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/coffeebreak/quiz-matching.png"
+            src="/image/project/coffeebreak/quiz-matching.webp"
             alt="Квиз: сопоставление слов с переводом (Matching)"
           />
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/coffeebreak/quiz-translate.png"
+            src="/image/project/coffeebreak/quiz-translate.webp"
             alt="Квиз: перевод слова с вариантами ответа (Translate the word)"
           />
         </div>
@@ -201,7 +201,7 @@ export const CoffeeBreakPage = () => {
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/coffeebreak/progress-per-language.png"
+            src="/image/project/coffeebreak/progress-per-language.webp"
             alt="Экран прогресса по каждому изучаемому языку"
           />
         </div>
@@ -220,7 +220,7 @@ export const CoffeeBreakPage = () => {
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/coffeebreak/empty-states.png"
+            src="/image/project/coffeebreak/empty-states.webp"
             alt="Пустые состояния экранов Coffee Break Languages"
           />
         </div>
@@ -242,7 +242,7 @@ export const CoffeeBreakPage = () => {
           <img
             loading="lazy"
             className={styles.radius12}
-            src="/image/project/coffeebreak/lesson-flow.png"
+            src="/image/project/coffeebreak/lesson-flow.webp"
             alt="Флоу урока: аудио, текст и проверка знаний"
           />
         </div>
@@ -262,7 +262,7 @@ export const CoffeeBreakPage = () => {
         <img
           loading="lazy"
           className={styles.radius12}
-          src="/image/project/coffeebreak/appstore-preview.png"
+          src="/image/project/coffeebreak/appstore-preview.webp"
           alt="Пять превью-экранов Coffee Break Languages для App Store"
         />
       </div>
@@ -280,7 +280,7 @@ export const CoffeeBreakPage = () => {
         <img
           loading="lazy"
           className={styles.radius12}
-          src="/image/project/coffeebreak/reviews.png"
+          src="/image/project/coffeebreak/reviews.webp"
           alt="Оценка и отзывы Coffee Break Languages в App Store"
         />
       </div>

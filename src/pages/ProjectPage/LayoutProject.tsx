@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Header } from '../../components/Header/Header.tsx';
 import { useParams } from 'react-router-dom';
 import { data } from '../../data.ts';
@@ -23,7 +24,11 @@ export const LayoutProject = () => {
           'projectPage',
         )}
       >
-        {project?.pageComponent && <project.pageComponent />}
+        {project?.pageComponent && (
+          <Suspense fallback={null}>
+            <project.pageComponent />
+          </Suspense>
+        )}
       </div>
       <Footer page={'inner'} />
     </>

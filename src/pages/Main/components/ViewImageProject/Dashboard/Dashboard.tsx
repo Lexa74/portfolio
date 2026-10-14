@@ -10,15 +10,19 @@ export const Dashboard = ({ isHover }: IViewImagesProp) => {
           className={classNames(styles.image, styles.image1, {
             [styles.isHover]: isHover,
           })}
-          src="/image/portfolio/Dashboard/dark.png"
+          src="/image/portfolio/Dashboard/dark.webp"
           alt=""
+          loading="lazy"
+          decoding="async"
         />
         <img
           className={classNames(styles.image, styles.image2, {
             [styles.isHover]: isHover,
           })}
-          src="/image/portfolio/Dashboard/light.png"
+          src="/image/portfolio/Dashboard/light.webp"
           alt=""
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </div>

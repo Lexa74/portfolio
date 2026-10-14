@@ -5,12 +5,16 @@ export const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.hero__photo}>
-        <img src="/image/photo.png" alt="Анастасия Плетнер" />
+        <img
+          src="/image/photo.webp"
+          alt="Анастасия Плетнер"
+          fetchPriority="high"
+        />
       </div>
       <div className={styles.hero__content}>
         <img
           className={styles.hero__title}
-          src="/image/title.png"
+          src="/image/title.webp"
           alt="Привет, я Настя. UI/UX дизайнер с опытом 2 года"
         />
         <p className={styles.hero__subtitle}>

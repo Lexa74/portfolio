@@ -122,7 +122,7 @@ export const MovieMatePage = () => {
         <img
           loading="lazy"
           className={styles.radius12}
-          src="/image/project/moviemate/user-flow.png"
+          src="/image/project/moviemate/user-flow.webp"
           alt="Схема пользовательского флоу MovieMate"
         />
       </div>
@@ -144,7 +144,7 @@ export const MovieMatePage = () => {
         </h3>
         <img
           loading="lazy"
-          src="/image/project/moviemate/welcome.png"
+          src="/image/project/moviemate/welcome.webp"
           alt="Приветственный экран, вход и регистрация MovieMate"
         />
       </div>
@@ -153,7 +153,7 @@ export const MovieMatePage = () => {
         <h3 className={moviemateStyles.screenHeading}>Онбординг</h3>
         <img
           loading="lazy"
-          src="/image/project/moviemate/onboarding.png"
+          src="/image/project/moviemate/onboarding.webp"
           alt="Онбординг MovieMate"
         />
       </div>
@@ -162,7 +162,7 @@ export const MovieMatePage = () => {
         <h3 className={moviemateStyles.screenHeading}>Основные экраны</h3>
         <img
           loading="lazy"
-          src="/image/project/moviemate/main-screens.png"
+          src="/image/project/moviemate/main-screens.webp"
           alt="Основные экраны MovieMate"
         />
       </div>

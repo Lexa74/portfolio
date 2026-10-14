@@ -13,8 +13,10 @@ export const MovieMate = ({ isHover }: IViewImagesProp) => {
         className={classNames(styles.movieItem, {
           [styles.isHover]: isHover,
         })}
-        src="/image/portfolio/MovieMate/screen.png"
+        src="/image/portfolio/MovieMate/screen.webp"
         alt=""
+        loading="lazy"
+        decoding="async"
       />
     </div>
   );

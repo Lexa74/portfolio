@@ -24,7 +24,7 @@ export const Header = ({ page = 'main' }: headerProp) => {
         </Link>
       )}
       <Link to={'/'} className={styles.header__logo}>
-        <img src="/image/logo.png" alt="Pletner Design" />
+        <img src="/image/logo.webp" alt="Pletner Design" />
       </Link>
       {isInner && (
         <a

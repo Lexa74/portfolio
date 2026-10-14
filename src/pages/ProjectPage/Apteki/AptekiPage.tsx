@@ -41,7 +41,7 @@ export const AptekiPage = () => {
             <img
               loading="lazy"
               className={styles.imagePersona}
-              src="/image/project/photo.png"
+              src="/image/project/photo.webp"
               alt=""
             />
             <div>
@@ -102,10 +102,10 @@ export const AptekiPage = () => {
         </div>
       </div>
       <div className={classNames(styles.imageFrame, styles.mb20)}>
-        <img loading="lazy" src="/image/project/table1.png" alt="" />
+        <img loading="lazy" src="/image/project/table1.webp" alt="" />
       </div>
       <div className={classNames(styles.imageFrame, styles.mb20)}>
-        <img loading="lazy" src="/image/project/table2.png" alt="" />
+        <img loading="lazy" src="/image/project/table2.webp" alt="" />
       </div>
       <div className={classNames(styles.blueBlock)}>
         <h3 className={styles.blueBlockTitle}>Гипотезы</h3>
@@ -125,8 +125,8 @@ export const AptekiPage = () => {
       <div className={styles.blueBlock}>
         <h4 className={styles.blueBlockTitle}>Аптека «Искамед», г. Минск</h4>
         <div className={classNames(styles.twoColumns, styles.gap0)}>
-          <img loading="lazy" src="/image/project/ap1.png" alt="" />
-          <img loading="lazy" src="/image/project/ap2.png" alt="" />
+          <img loading="lazy" src="/image/project/ap1.webp" alt="" />
+          <img loading="lazy" src="/image/project/ap2.webp" alt="" />
         </div>
       </div>
       <div className={styles.blueBlock}>
@@ -224,19 +224,19 @@ export const AptekiPage = () => {
         </ol>
       </div>
       <div className={classNames(styles.imageFrame, styles.block)}>
-        <img loading="lazy" src="/image/project/Table%201.png" alt="" />
+        <img loading="lazy" src="/image/project/Table%201.webp" alt="" />
       </div>
       <div className={classNames(styles.imageFrame, styles.block)}>
-        <img loading="lazy" src="/image/project/Table-1%201.png" alt="" />
+        <img loading="lazy" src="/image/project/Table-1%201.webp" alt="" />
       </div>
       <div className={classNames(styles.imageFrame, styles.block)}>
-        <img loading="lazy" src="/image/project/Table-2%201.png" alt="" />
+        <img loading="lazy" src="/image/project/Table-2%201.webp" alt="" />
       </div>
       <div className={classNames(styles.imageFrame, styles.block)}>
-        <img loading="lazy" src="/image/project/Table-3%201.png" alt="" />
+        <img loading="lazy" src="/image/project/Table-3%201.webp" alt="" />
       </div>
       <div className={classNames(styles.imageFrame, styles.block)}>
-        <img loading="lazy" src="/image/project/Table-4%201.png" alt="" />
+        <img loading="lazy" src="/image/project/Table-4%201.webp" alt="" />
       </div>
       <div className={classNames(styles.blueBlock, styles.mb40)}>
         <h4 className={styles.blueBlockWhiteText}>
@@ -386,30 +386,30 @@ export const AptekiPage = () => {
         <div className={styles.twoColumns}>
           <div className={styles.columnsSpaceBetween}>
             <div className={styles.imageFrame}>
-              <img loading="lazy" src="/image/project/diag1.png" alt="" />
+              <img loading="lazy" src="/image/project/diag1.webp" alt="" />
             </div>
             <div className={styles.imageFrame}>
-              <img loading="lazy" src="/image/project/diag2.png" alt="" />
+              <img loading="lazy" src="/image/project/diag2.webp" alt="" />
             </div>
             <div className={styles.imageFrame}>
-              <img loading="lazy" src="/image/project/diag3.png" alt="" />
+              <img loading="lazy" src="/image/project/diag3.webp" alt="" />
             </div>
             <div className={styles.imageFrame}>
-              <img loading="lazy" src="/image/project/diag4.png" alt="" />
+              <img loading="lazy" src="/image/project/diag4.webp" alt="" />
             </div>
           </div>
           <div className={styles.columnsSpaceBetween}>
             <div className={styles.imageFrame}>
-              <img loading="lazy" src="/image/project/diag2-1.png" alt="" />
+              <img loading="lazy" src="/image/project/diag2-1.webp" alt="" />
             </div>
             <div className={styles.imageFrame}>
-              <img loading="lazy" src="/image/project/diag2-2.png" alt="" />
+              <img loading="lazy" src="/image/project/diag2-2.webp" alt="" />
             </div>
             <div className={styles.imageFrame}>
-              <img loading="lazy" src="/image/project/diag2-3.png" alt="" />
+              <img loading="lazy" src="/image/project/diag2-3.webp" alt="" />
             </div>
             <div className={styles.imageFrame}>
-              <img loading="lazy" src="/image/project/diag2-4.png" alt="" />
+              <img loading="lazy" src="/image/project/diag2-4.webp" alt="" />
             </div>
           </div>
         </div>
@@ -449,11 +449,14 @@ export const AptekiPage = () => {
             </p>
           </div>
           <div className={classNames(styles.flexEnd, styles.twoColumns)}>
-            <img
-              loading="lazy"
+            <video
               className={styles.radius12}
-              src="/image/project/kotik.gif"
-              alt=""
+              src="/image/project/kotik.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="none"
             />
             <h5 className={classNames(styles.blueBlockWhiteText, styles.mb0)}>
               Спасибо за прочтение!
@@ -464,7 +467,7 @@ export const AptekiPage = () => {
           <h4 className={classNames(styles.h1, styles.textCenter)}>
             Концепт главного экрана приложения
           </h4>
-          <img loading="lazy" src="/image/project/image-phone.png" alt="" />
+          <img loading="lazy" src="/image/project/image-phone.webp" alt="" />
         </div>
       </div>
     </>

@@ -43,13 +43,17 @@ export const DashboardPage = () => {
         </div>
         <img
           className={dashboardStyles.image}
-          src="/image/project/dashboard/dashLight.png"
+          src="/image/project/dashboard/dashLight.webp"
           alt=""
+          loading="lazy"
+          decoding="async"
         />
         <img
           className={dashboardStyles.image}
-          src="/image/project/dashboard/dashDark.png"
+          src="/image/project/dashboard/dashDark.webp"
           alt=""
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </>
