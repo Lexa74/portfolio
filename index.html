@@ -7,6 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!--
+      Это SPA: <img> из Hero рендерится React'ом, браузер не видит его в
+      исходном HTML и не может начать качать, пока не выполнится JS —
+      по PageSpeed именно это держало LCP на ~7-10s на мобилке. Явный
+      preload запускает загрузку картинки сразу при парсинге <head>,
+      параллельно с JS, а не после него. Фото — единственный элемент,
+      которого это касается (он LCP-кандидат на главной); отдаём его
+      и на внутренних страницах тоже — он там не используется, но весит
+      мало (~200KB) и не настолько критично, чтобы городить разный
+      index.html на каждый роут ради экономии.
+    -->
+    <link rel="preload" as="image" href="/image/photo.webp" fetchpriority="high" />
+    <!--
       Dela Gothic One нужен только на странице кейса Movie Mate (числа в
       статах), не на главной и не на остальных кейсах. Грузим его не
       render-blocking'ом (как обычный <link rel="stylesheet">), а в фоне:
