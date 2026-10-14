@@ -30,8 +30,6 @@
     border-radius: 50%;
     background: var(--color-accent-tint);
     color: var(--color-accent-dark);
-    font-size: 20px;
-    line-height: 1;
     cursor: pointer;
     display: flex;
     align-items: center;

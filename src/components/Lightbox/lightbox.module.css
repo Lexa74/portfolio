@@ -1,0 +1,122 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(26, 52, 69, .85);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-accent-tint);
+    color: var(--color-accent-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.close:hover {
+    background: var(--color-accent-dark);
+    color: white;
+}
+
+.nav {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-accent-tint);
+    color: var(--color-accent-dark);
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.nav:hover {
+    background: var(--color-accent-dark);
+    color: white;
+}
+
+.imageWrap {
+    position: relative;
+    max-width: calc(100% - 136px);
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageWrap img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.counter {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    opacity: .75;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        gap: 0;
+    }
+
+    .nav {
+        position: absolute;
+        bottom: 16px;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    .navPrev {
+        left: 16px;
+    }
+
+    .navNext {
+        right: 16px;
+    }
+
+    .imageWrap {
+        max-width: 100%;
+    }
+
+    .close {
+        top: 12px;
+        right: 12px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .counter {
+        bottom: -28px;
+    }
+}

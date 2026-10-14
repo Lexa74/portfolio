@@ -39,6 +39,8 @@
 .card__image > img {
     display: block;
     width: 100%;
+    aspect-ratio: 49 / 40;
+    object-fit: cover;
 }
 
 .card__title {
@@ -96,26 +98,21 @@
 
 @media (max-width: 768px) {
     .title {
-        max-width: 118px;
+        max-width: 140px;
     }
 
     .titleOther {
-        max-width: 117px;
-    }
-
-    .card__image > img {
-        height: 257px;
-        object-fit: cover;
+        max-width: 139px;
     }
 }
 
 @media (max-width: 478px) {
     .title {
-        max-width: 88px;
+        max-width: 104px;
     }
 
     .titleOther {
-        max-width: 88px;
+        max-width: 103px;
     }
 
     .mainContent {

@@ -1,4 +1,6 @@
 .movieMateImages {
+    aspect-ratio: 49 / 40;
+    overflow: hidden;
     background: #1F1F26;
     display: flex;
     justify-content: center;

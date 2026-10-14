@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Header } from '../../components/Header/Header.tsx';
 import { Footer } from '../../components/Footer/Footer.tsx';
+import { Lightbox } from '../../components/Lightbox/Lightbox.tsx';
 import collagesStyles from './collagesPage.module.css';
 import globalS from '/src/UI/sharedStyles.module.css';
 import classNames from 'classnames';
@@ -56,7 +58,16 @@ const images = [
   },
 ];
 
+const banner = {
+  src: '/image/project/collages/collage-banner.png',
+  alt: 'Коллаж-баннер с надписями BECHA и Spring, чёрно-белые фотографии',
+};
+
+const lightboxImages = [...images, banner];
+
 export const CollagesPage = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <div className={collagesStyles.page}>
       <Header page={'inner'} />
@@ -79,18 +90,35 @@ export const CollagesPage = () => {
         </div>
 
         <div className={collagesStyles.grid}>
-          {images.map((img) => (
-            <img key={img.src} loading="lazy" src={img.src} alt={img.alt} />
+          {images.map((img, i) => (
+            <button
+              key={img.src}
+              type="button"
+              className={collagesStyles.thumb}
+              onClick={() => setOpenIndex(i)}
+            >
+              <img loading="lazy" src={img.src} alt={img.alt} />
+            </button>
           ))}
-          <img
-            className={collagesStyles.banner}
-            loading="lazy"
-            src="/image/project/collages/collage-banner.png"
-            alt="Коллаж-баннер с надписями BECHA и Spring, чёрно-белые фотографии"
-          />
+          <button
+            type="button"
+            className={classNames(collagesStyles.thumb, collagesStyles.banner)}
+            onClick={() => setOpenIndex(images.length)}
+          >
+            <img loading="lazy" src={banner.src} alt={banner.alt} />
+          </button>
         </div>
       </div>
       <Footer page={'inner'} />
+
+      {openIndex !== null && (
+        <Lightbox
+          images={lightboxImages}
+          index={openIndex}
+          onClose={() => setOpenIndex(null)}
+          onIndexChange={setOpenIndex}
+        />
+      )}
     </div>
   );
 };

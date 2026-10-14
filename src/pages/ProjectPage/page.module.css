@@ -168,3 +168,9 @@ img {
     border-radius: 12px;
     padding: 16px;
 }
+
+@media (max-width: 590px) {
+    .twoColumns {
+        grid-template-columns: 1fr;
+    }
+}

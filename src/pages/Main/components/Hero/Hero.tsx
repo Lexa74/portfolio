@@ -52,7 +52,7 @@ export const Hero = () => {
         <div className={styles.hero__actions}>
           <a
             target={'_blank'}
-            href="https://drive.google.com/file/d/1vL_AgiVcspeFZyPGRXV8tTwfnq3TSQBd/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ond0GQoaLASGVNOgAdwm0TvtZDbsp2F4/view?usp=sharing"
           >
             <Button typeStyle="secondary">Посмотреть CV</Button>
           </a>
