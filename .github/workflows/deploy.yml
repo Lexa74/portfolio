@@ -27,6 +27,6 @@ jobs:
           echo "$SSH_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
-          rsync -avz --delete \
+          rsync -avz --delete --chown=www-data:www-data \
             -e "ssh -i ~/.ssh/deploy_key" \
             dist/ "root@$HOST:/var/www/pletnerdesign.ru/"
