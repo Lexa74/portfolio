@@ -29,7 +29,12 @@ export const Footer = ({ page = 'main' }: FooterProps) => {
           </Link>
         ) : (
           <Link to={'/'} className={styles.footer__logo}>
-            <img src="/image/logo.webp" alt="Pletner Design" />
+            <img
+              src="/image/logo.webp"
+              alt="Pletner Design"
+              width={464}
+              height={96}
+            />
           </Link>
         )}
         <div className={styles.footer__linkBox}>

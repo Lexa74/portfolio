@@ -9,6 +9,8 @@ export const Hero = () => {
           src="/image/photo.webp"
           alt="Анастасия Плетнер"
           fetchPriority="high"
+          width={1120}
+          height={903}
         />
       </div>
       <div className={styles.hero__content}>
@@ -16,6 +18,8 @@ export const Hero = () => {
           className={styles.hero__title}
           src="/image/title.webp"
           alt="Привет, я Настя. UI/UX дизайнер с опытом 2 года"
+          width={960}
+          height={140}
         />
         <p className={styles.hero__subtitle}>
           UI/UX дизайнер с опытом 2,5 года

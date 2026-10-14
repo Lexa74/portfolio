@@ -6,10 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      Dela Gothic One нужен только на странице кейса Movie Mate (числа в
+      статах), не на главной и не на остальных кейсах. Грузим его не
+      render-blocking'ом (как обычный <link rel="stylesheet">), а в фоне:
+      preload грузит CSS без блокировки отрисовки, onload переключает его
+      в реальный stylesheet, когда он готов. noscript — чтобы шрифт всё
+      равно подключился при отключённом JS.
+    -->
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <title>Портфолио | Анастасия Плетнер</title>
   </head>
   <body>

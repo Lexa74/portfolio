@@ -17,6 +17,8 @@ export const MainContent = () => {
         alt="Кейсы"
         loading="lazy"
         decoding="async"
+        width={500}
+        height={175}
       />
       <div className={styles.mainContent}>
         {data.map((card) => (
@@ -30,6 +32,8 @@ export const MainContent = () => {
         alt="Другое"
         loading="lazy"
         decoding="async"
+        width={352}
+        height={124}
       />
       <div className={styles.mainContent}>
         <Link to="/collages" className={styles.card}>
